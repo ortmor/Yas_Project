@@ -1,0 +1,105 @@
+/* eslint-disable */
+.page-container {
+  max-width: 800px;
+  margin: 5rem auto;
+  padding: 1px;
+  text-align: center;
+  background-color: rgba(5, 220, 220, 0.927);
+}
+img {
+  width: 219px;
+  margin-top: 3rem;
+  visibility: visible;
+}
+p {
+  font-size: 1.9rem;
+  font-weight: 400rm;
+  margin-bottom: 2rem;
+  color: #fff;
+  font-family: DINCond-Bold;
+}
+.post-video-container{
+        width: 100%;
+        margin-bottom: 2rem;
+        object-fit: cover;
+        cursor: pointer;
+}
+.button-container {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.button-button {
+  margin-bottom: 3rem;
+  margin-left: 290px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(113, 112, 115);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 2rem;
+  font-family: DINCond-Bold;
+  cursor: pointer;
+}
+
+
+/*Media query*/
+
+@media screen  and (max-width:600px){
+    .page-container {
+        width: 100%;
+        height: unset;
+        margin: auto;
+        padding: 1px;
+        text-align: center;
+        background-color: rgba(5, 220, 220, 0.927);
+      }
+      img {
+        width: 219px;
+        margin-top: 4rem!important;
+        visibility: visible;
+      }
+      p {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 200rm;
+        margin-bottom: 2rem;
+        color: #fff;
+        font-family: DINCond-Bold;
+      }
+      .post-video-container{
+              width: 100%;
+              margin: auto;
+              margin-bottom: 2rem;
+              object-fit: contain;
+              cursor: pointer;
+      }
+      .button-container {
+        margin-bottom: 2rem;
+        position: relative;
+      }
+      
+      .button-button {
+        margin-bottom: 3rem;
+        margin-left: 290px;
+        width: 200px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(113, 112, 115);
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        font-size: 2rem;
+        font-family: DINCond-Bold;
+        cursor: pointer;
+      }
+        
+}

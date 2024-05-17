@@ -1,0 +1,788 @@
+.about-containertwo {
+    max-width: 600px;
+    margin: 5rem auto;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255,30,0);
+    
+  }
+  
+  .abtpro-logo{
+    width: 376px !important;
+    margin-bottom: 20px;
+    margin-left: 99px;
+  
+  }
+  h3 {
+    text-align: center;
+    color: white;
+    font-family: 'DINCond-Bold', sans-serif; 
+  
+  
+  }
+  h2{
+    font-family: 'DINCond-Bold', sans-serif; 
+    color: white;
+  }
+  p {
+    margin-bottom: 20px;
+    font-family: 'DINCond-Bold', sans-serif; 
+    text-align: center;
+    color: white;
+  }
+  
+  .options-container {
+    display: flex;
+    flex-direction: column;
+    color: grey;
+  }
+  
+  .answer-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: white;
+    width: 363px;
+    margin-left: 107px;
+  }
+  
+  .answer-option:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .answer-option.correct {
+    background-color: lightgreen;
+  }
+  
+  .answer-option.incorrect {
+    background-color: yellow;
+  }
+  
+  .next-button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color:GREY ;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+   width: 156px;
+    margin-left: 222px;
+  }
+  
+  .next-button:hover {
+    background-color: lightgray;
+  }
+  
+  .alert-message {
+    margin-top: 10px;
+    color: red;
+    font-weight: bold;
+  }
+  .submit-button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: grey;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 156px;
+    margin-left: 222px;
+  }
+  
+  .submit-button:hover {
+    background-color: lightgray;
+  }
+  
+  
+  @media screen  and (max-width:600px){
+    
+    .about-containertwo {
+      max-width: 100%;
+      margin-top: 4rem;
+      margin-top: 4rem;
+      margin-left: 4rem;
+      margin-right: 4rem;
+      padding: -3rem;
+      padding: 2rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      background-color: rgb(255,30,0);
+      
+    }
+    .abtpro-logo{
+      width: 300px !important;
+      margin-bottom: 20px;
+      margin-left: 2rem;
+    
+    }
+    h3 {
+      text-align: center;
+      color: white;
+      font-family: 'DINCond-Bold', sans-serif; 
+    
+    
+    }
+    h2{
+      font-family: 'DINCond-Bold', sans-serif; 
+      color: white;
+    }
+    p {
+      margin-bottom: 20px;
+      font-family: 'DINCond-Bold', sans-serif; 
+      text-align: center;
+      color: white;
+    }
+    
+    .options-container {
+      display: flex;
+      flex-direction: column;
+      color: grey;
+    }
+    
+    .answer-option {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      background-color: white;
+      width: 290px;
+      margin-left: 1rem;
+    }
+    
+    .answer-option:hover {
+      background-color: #e0e0e0;
+    }
+    
+    .answer-option.correct {
+      background-color: lightgreen;
+    }
+    
+    .answer-option.incorrect {
+      background-color: yellow;
+    }
+    
+    .next-button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color:GREY ;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+     width: 156px;
+      margin-left: 5rem;
+    }
+    
+    .next-button:hover {
+      background-color: lightgray;
+    }
+    
+    .alert-message {
+      margin-top: 10px;
+      color: red;
+      font-weight: bold;
+    }
+    .submit-button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: grey;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 156px;
+      margin-left: 222px;
+    }
+    
+    .submit-button:hover {
+      background-color: lightgray;
+    }
+  }
+  
+  
+  
+  @media screen  and (max-width:500px){
+    
+     
+    .about-containertwo {
+      max-width: 100%;
+      margin-top: 4rem;
+      margin-top: 4rem;
+      margin-left: 4rem;
+      margin-right: 4rem;
+      padding: 2rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      background-color: rgb(255,30,0);
+      
+    }
+    .abtpro-logo{
+      width: 280px !important;
+      margin-bottom: 20px;
+      margin-left: 1rem;
+    
+    }
+    h3 {
+      text-align: center;
+      color: white;
+      font-family: 'DINCond-Bold', sans-serif; 
+    
+    
+    }
+    h2{
+      font-family: 'DINCond-Bold', sans-serif; 
+      color: white;
+    }
+    p {
+      margin-bottom: 20px;
+      font-family: 'DINCond-Bold', sans-serif; 
+      text-align: center;
+      color: white;
+    }
+    
+    .options-container {
+      display: flex;
+      flex-direction: column;
+      color: grey;
+    }
+    
+    .answer-option {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      background-color: white;
+      width: 260px;
+      margin-left: 0rem;
+    }
+    
+    .answer-option:hover {
+      background-color: #e0e0e0;
+    }
+    
+    .answer-option.correct {
+      background-color: lightgreen;
+    }
+    
+    .answer-option.incorrect {
+      background-color: yellow;
+    }
+    
+    .next-button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color:GREY ;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+     width: 156px;
+      margin-left: 3rem;
+    }
+    
+    .next-button:hover {
+      background-color: lightgray;
+    }
+    
+    .alert-message {
+      margin-top: 10px;
+      color: red;
+      font-weight: bold;
+    }
+    .submit-button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: grey;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 156px;
+      margin-left: 222px;
+    }
+    
+    .submit-button:hover {
+      background-color: lightgray;
+    }
+  }
+  
+  
+  @media screen  and (max-width:450px){
+    
+     
+    .about-containertwo {
+      max-width: 100%;
+      margin-top: 7rem;
+      margin-bottom: 3rem;
+      margin-left: 3rem;
+      margin-right: 3rem;
+      padding: 2rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      background-color: rgb(255,30,0);
+      
+    }
+    .abtpro-logo{
+      width: 230px !important;
+      margin-bottom: 20px;
+      margin-left: 1rem;
+    
+    }
+    h3 {
+      text-align: center;
+      color: white;
+      font-family: 'DINCond-Bold', sans-serif; 
+    
+    
+    }
+    h2{
+      font-family: 'DINCond-Bold', sans-serif; 
+      color: white;
+    }
+    p {
+      margin-bottom: 20px;
+      font-family: 'DINCond-Bold', sans-serif; 
+      text-align: center;
+      color: white;
+    }
+    
+    .options-container {
+      display: flex;
+      flex-direction: column;
+      color: grey;
+    }
+    
+    .answer-option {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      background-color: white;
+      width: 250px;
+      margin-left: 0rem;
+    }
+    
+    .answer-option:hover {
+      background-color: #e0e0e0;
+    }
+    
+    .answer-option.correct {
+      background-color: lightgreen;
+    }
+    
+    .answer-option.incorrect {
+      background-color: yellow;
+    }
+    
+    .next-button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color:GREY ;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+     width: 156px;
+      margin-left: 3rem;
+    }
+    
+    .next-button:hover {
+      background-color: lightgray;
+    }
+    
+    .alert-message {
+      margin-top: 10px;
+      color: red;
+      font-weight: bold;
+    }
+    .submit-button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: grey;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 156px;
+      margin-left: 222px;
+    }
+    
+    .submit-button:hover {
+      background-color: lightgray;
+    }
+  }
+  
+  @media screen  and (max-width:400px){
+    
+     
+    .about-container {
+      max-width: 100%;
+      margin-top: 5rem !important;
+      margin-bottom: 3rem;
+      margin-left: 3rem;
+      margin-right: 3rem;
+      padding: 2rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      background-color: rgb(0,137,150);
+      
+    }
+    .abtpro-logo{
+      width: 220px !important;
+      margin-bottom: 20px;
+      margin-left: 0rem;
+    
+    }
+    h3 {
+      text-align: center;
+      color: white;
+      font-family: 'DINCond-Bold', sans-serif; 
+    
+    
+    }
+    h2{
+      font-family: 'DINCond-Bold', sans-serif; 
+      color: white;
+    }
+    p {
+      margin-bottom: 20px;
+      font-family: 'DINCond-Bold', sans-serif; 
+      text-align: center;
+      color: white;
+    }
+    
+    .options-container {
+      display: flex;
+      flex-direction: column;
+      color: grey;
+    }
+    
+    .answer-option {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      background-color: white;
+      width: 190px;
+      margin-left: 0rem;
+    }
+    
+    .answer-option:hover {
+      background-color: #e0e0e0;
+    }
+    
+    .answer-option.correct {
+      background-color: lightgreen;
+    }
+    
+    .answer-option.incorrect {
+      background-color: yellow;
+    }
+    
+    .next-button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color:GREY ;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+     width: 156px;
+      margin-left: 2rem;
+    }
+    
+    .next-button:hover {
+      background-color: lightgray;
+    }
+    
+    .alert-message {
+      margin-top: 10px;
+      color: red;
+      font-weight: bold;
+    }
+    .submit-button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: grey;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 156px;
+      margin-left: 222px;
+    }
+    
+    .submit-button:hover {
+      background-color: lightgray;
+    }
+  }
+  
+  @media screen  and (max-width:350px){
+    
+     
+    .about-containertwo {
+      max-width: 100%;
+      margin-top: 4.5rem !important;
+      margin-bottom: 2rem ;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      padding: 2rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      background-color: rgb(255,30,0);
+      
+    }
+    .abtpro-logo{
+      width: 200px !important;
+      margin-bottom: 20px;
+      margin-left: 0rem;
+    
+    }
+    h3 {
+      text-align: center;
+      color: white;
+      font-family: 'DINCond-Bold', sans-serif; 
+    
+    
+    }
+    h2{
+      font-family: 'DINCond-Bold', sans-serif; 
+      color: white;
+    }
+    p {
+      margin-bottom: 20px;
+      font-family: 'DINCond-Bold', sans-serif; 
+      text-align: center;
+      color: white;
+    }
+    
+    .options-container {
+      display: flex;
+      flex-direction: column;
+      color: grey;
+    }
+    
+    .answer-option {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      background-color: white;
+      width: 200px;
+      margin-left: 0rem;
+    }
+    
+    .answer-option:hover {
+      background-color: #e0e0e0;
+    }
+    
+    .answer-option.correct {
+      background-color: lightgreen;
+    }
+    
+    .answer-option.incorrect {
+      background-color: yellow;
+    }
+    
+    .next-button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color:GREY ;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+     width: 156px;
+      margin-left: 2rem;
+    }
+    
+    .next-button:hover {
+      background-color: lightgray;
+    }
+    
+    .alert-message {
+      margin-top: 10px;
+      color: red;
+      font-weight: bold;
+    }
+    .submit-button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: grey;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 156px;
+      margin-left: 222px;
+    }
+    
+    .submit-button:hover {
+      background-color: lightgray;
+    }
+  }
+  
+  
+  @media screen  and (max-width:300px){
+    
+     
+    .about-containertwo {
+      max-width: 100%;
+      margin-top: 4.5rem !important;
+      margin-bottom: 1rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      padding: 2rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      background-color: rgb(255,30,0);
+      
+    }
+    .abtpro-logo{
+      width: 200px !important;
+      margin-bottom: 20px;
+      margin-left: 0rem;
+    
+    }
+    h3 {
+      text-align: center;
+      color: white;
+      font-family: 'DINCond-Bold', sans-serif; 
+    
+    
+    }
+    h2{
+      font-family: 'DINCond-Bold', sans-serif; 
+      color: white;
+    }
+    p {
+      margin-bottom: 20px;
+      font-family: 'DINCond-Bold', sans-serif; 
+      text-align: center;
+      color: white;
+    }
+    
+    .options-container {
+      display: flex;
+      flex-direction: column;
+      color: grey;
+    }
+    
+    .answer-option {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      background-color: white;
+      width: 170px;
+    }
+    
+    .answer-option:hover {
+      background-color: #e0e0e0;
+    }
+    
+    .answer-option.correct {
+      background-color: lightgreen;
+    }
+    
+    .answer-option.incorrect {
+      background-color: yellow;
+    }
+    
+    .next-button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color:GREY ;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+     width: 150px;
+      margin-left: 1rem;
+    }
+    
+    .next-button:hover {
+      background-color: lightgray;
+    }
+    
+    .alert-message {
+      margin-top: 10px;
+      color: red;
+      font-weight: bold;
+    }
+    .submit-button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: grey;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 156px;
+      margin-left: 222px;
+    }
+    
+    .submit-button:hover {
+      background-color: lightgray;
+    }
+  }

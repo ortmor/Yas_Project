@@ -1,0 +1,46 @@
+/* ThankyouPage.css */
+.main-thankyou{
+
+     width: 100% !important;
+  height: 100vh;
+  background-color: rgb(24, 89, 169) !important;
+  font-family: 'DINCond-Bold', sans-serif; 
+}
+.thankyou-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  
+  }
+  
+  .logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: white;
+  }
+  
+  p {
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .black-button {
+    padding: 12px 24px;
+    background-color:GREY ;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 212px;
+  }
+  
+  .black-button:hover {
+    background-color: lightgray;
+  }
+  

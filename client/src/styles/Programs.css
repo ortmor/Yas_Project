@@ -1,0 +1,598 @@
+.space{
+  margin-top: -3rem;
+  height: 10vh;
+  width: 100%;
+
+  background-color: rgb(24, 89, 169) !important;
+
+}
+
+.programs-containermain{
+  width: 100% !important;
+  height: 100vh;
+  background-color: rgb(24, 89, 169) !important;
+  font-family: 'DINCond-Bold', sans-serif; 
+}
+
+.programs-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+ 
+}
+
+.programs-logo {
+  width: 259px !important;
+  margin-bottom: 20px;
+}
+
+.program-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+.h3{
+  font-family: 'DINCond-Bold', sans-serif; 
+  
+}
+.program-button {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  position: relative; /* Add position relative to enable absolute positioning for hover effect */
+  overflow: hidden; /* Ensure the border doesn't increase the size of the button */
+}
+
+.program-image {
+  width: 100%; /* Ensure the image fills the button */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.program-button:hover {
+  background-color: lightgray;
+}
+
+.program-button::before,
+.program-button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.program-button::before {
+  top: 0;
+  left: -100%;
+}
+
+.program-button::after {
+  bottom: 0;
+  right: -100%;
+}
+
+.program-button:hover::before,
+.program-button:hover::after {
+  left: 0;
+  right: 0;
+}
+
+.green {
+  background-color: green;
+  color: white;
+}
+
+.extra-button {
+  width: 200px;
+  padding: 12px;
+  background-color: grey;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block; /* Ensure the button is displayed as a block-level element */
+  margin-bottom: 10px; /* Add margin to create space between buttons */
+  margin-left: 301px;
+  padding: 2px;
+  
+}
+.extra-button1{
+  width: 193px;
+  height: 40px;
+   background-color: grey;
+   
+}
+.extra-button:hover {
+  background-color: lightgray;
+}
+.extra-button1:hover {
+  background-color: lightgray;
+}
+
+@media screen  and (max-width:600px) {
+  .programs-container {
+    max-width: 439px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(24, 89, 169) !important;
+    font-family: 'DINCond-Bold', sans-serif;
+}
+.extra-button {
+  width: 200px;
+  padding: 12px;
+  background-color: grey;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 118px;
+  padding: 2px;
+  height: 2.2rem;
+}
+
+.extra-button1 {
+    width: 193px;
+    height: 36px;
+    background-color: grey;
+    margin-left: 2rem;
+  }
+}
+
+@media screen  and (max-width:550px){
+     
+      
+  .program-button {
+    width: 131px;
+    height: 101px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-left: -8px;
+    gap: 14px;
+}
+ 
+.green {
+  background-color: green;
+  color: white;
+}
+
+}
+@media screen  and (max-width:500px){
+
+  .programs-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+   
+  }
+  
+  .programs-logo {
+    width: 259px !important;
+    margin-bottom: 20px;
+  }
+  
+  .program-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+  .h3{
+    font-family: 'DINCond-Bold', sans-serif; 
+    
+  }
+  .program-button {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative; /* Add position relative to enable absolute positioning for hover effect */
+    overflow: hidden; /* Ensure the border doesn't increase the size of the button */
+  }
+  
+  .program-image {
+    width: 100%; /* Ensure the image fills the button */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .program-button:hover {
+    background-color: lightgray;
+  }
+  
+  .program-button::before,
+  .program-button::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .program-button::before {
+    top: 0;
+    left: -100%;
+  }
+  
+  .program-button::after {
+    bottom: 0;
+    right: -100%;
+  }
+  
+  .program-button:hover::before,
+  .program-button:hover::after {
+    left: 0;
+    right: 0;
+  }
+  
+  .green {
+    background-color: green;
+    color: white;
+  }
+  
+  .extra-button {
+    width: 200px;
+    padding: 12px;
+    background-color: grey;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 125px;
+    padding: 2px;
+}
+.extra-button1{
+  width: 193px;
+  height: 40px;
+   background-color: grey;
+   margin-left: 10px;
+   
+}
+  .extra-button:hover {
+    background-color: lightgray;
+  }
+  .extra-button1:hover {
+    background-color: lightgray;
+  }
+
+}
+@media screen  and (max-width:420px) {
+
+  .extra-button {
+    width: 200px;
+    padding: 12px;
+    background-color: grey;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 87px;
+    padding: 2px;
+}
+.programs-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4px;
+  text-align: center;
+  background-color: rgb(24, 89, 169) !important;
+  font-family: 'DINCond-Bold', sans-serif;
+  width: 390px;
+  height: 491px;
+}
+}
+
+@media screen  and (max-width:414px) {
+
+  .extra-button {
+    width: 56%;
+    padding: 12px;
+    background-color: grey;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 87px;
+    padding: 2px;
+}
+.programs-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 4px;
+  text-align: center;
+  background-color: rgb(24, 89, 169) !important;
+  font-family: 'DINCond-Bold', sans-serif;
+  width: 390px;
+  height: 491px;
+}
+.program-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8.5px;
+  justify-items: center;
+}
+}
+
+
+@media screen  and (max-width:400px) {
+   
+  .green {
+    background-color: green;
+    color: white;
+  }
+  .extra-button {
+    width: 200px;
+    padding: 12px;
+    background-color: grey;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 88px;
+    padding: 2px;
+}
+
+.extra-button1 {
+  width: 200px;
+  height: 40px;
+  background-color: grey;
+  margin-left: -20px;
+}
+.programs-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4px;
+  text-align: center;
+  background-color: rgb(24, 89, 169) !important;
+  font-family: 'DINCond-Bold', sans-serif;
+  width: 390px;
+  height: 658px;
+}
+.program-button {
+  width: 171px;
+  height: 131px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+}
+
+
+
+@media screen  and (max-width:399px) {
+  .programs-container {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 38px;
+    text-align: center;
+    background-color: rgb(24, 89, 169) !important;
+    font-family: 'DINCond-Bold', sans-serif;
+    width: 390px;
+    height: 567px;
+    margin-top: -6px;
+    margin-left: -22px;
+}
+.extra-button {
+  width: 200px;
+  padding: 12px;
+  background-color: grey;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 88px;
+  padding: 2px;
+}
+.extra-button1 {
+  width: 201px;
+  height: 41px;
+  background-color: grey;
+  margin-left: 61px;
+}
+ 
+.green {
+  background-color: green;
+  color: white;
+}
+.space{
+  margin-top: -3rem;
+  width: 100% !important;
+
+  height: 30vh;
+  background-color: rgb(24, 89, 169) !important;
+
+}
+
+}
+
+@media screen  and (max-width:350px) {
+  .program-button {
+    width: 147px;
+    height: 131px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-left: 21px;
+}
+
+  .programs-container {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(24, 89, 169) !important;
+    font-family: 'DINCond-Bold', sans-serif;
+
+    margin-left: -38px;
+    width: 100%;
+}
+.extra-button {
+  width: 200px;
+  padding: 12px;
+  background-color: grey;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 88px;
+  padding: 2px;
+}
+  .extra-button1 {
+    width: 201px;
+    height: 41px;
+    background-color: grey;
+    margin-left: 40px;
+}
+ 
+.green {
+  background-color: green;
+  color: white;
+}
+.space{
+  margin-top: -3rem;
+  width: 100% !important;
+  height: 45vh;
+  background-color: rgb(24, 89, 169) !important;
+
+}
+
+}
+
+
+
+@media screen  and (max-width:330px) {
+  .program-button {
+    width: 147px;
+    height: 131px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-left: 21px;
+}
+
+  .programs-container {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(24, 89, 169) !important;
+    font-family: 'DINCond-Bold', sans-serif;
+
+    margin-left: -38px;
+    width: 100%;
+}
+.extra-button {
+  width: 200px;
+  padding: 12px;
+  background-color: grey;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 36px;
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 88px;
+  padding: 2px;
+}
+.extra-button1 {
+  width: 201px;
+  height: 41px;
+  background-color: grey;
+  margin-left: 88px;
+  margin-top: 2rem;
+}
+ 
+.green {
+  background-color: green;
+  color: white;
+}
+.space{
+  margin-top: -3rem;
+  width: 100% !important;
+  height: 45vh;
+  background-color: rgb(24, 89, 169) !important;
+
+}
+
+}
