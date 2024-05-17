@@ -7,9 +7,7 @@ import { useSelector } from "react-redux";
 
 const AboutPageDetails = () => {
   const navigate = useNavigate();
-  const [programNum, setProgramNum] = useState([]);
-  const { user } = useSelector((state) => state);
-  const userId = user && user.details ? user.details._id : null;
+
   const videoId = "RJTjmvukv6s"; // Updated with the new video ID
 
   const handleAnswerTriviaClick = () => {

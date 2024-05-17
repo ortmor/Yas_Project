@@ -85,7 +85,6 @@ const App = () => {
             <Route path="/programs" element={<Programs />} />
             <Route path="/video" element={<VideoPage />} />
             <Route path="/qr-scanner" element={<QrScannerPage />} />
-          
             <Route path="/about-program" element={<AboutProgram />} />
             <Route path="/about-program-2" element={<AboutProgram2 />} />
             <Route path="/about-program-3" element={<AboutProgram3 />} />

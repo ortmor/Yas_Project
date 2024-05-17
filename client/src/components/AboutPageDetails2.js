@@ -7,26 +7,10 @@ import { useSelector } from "react-redux";
 
 function AboutPageDetails2() {
   const navigate = useNavigate();
-  const [programNum, setProgramNum] = useState([]);
-  const { user } = useSelector((state) => state);
-  const userId = user && user.details ? user.details._id : null;
+
   const videoId = "flR_sROmpJs"; // Updated with the new video ID
 
-  useEffect(() => {
-    axios
-      .get(`/resultUser/${userId}`)
-      .then((response) => {
-        if (!response.data.error) {
-          const programNumbers = response.data.map((data) => data.programnum);
-          setProgramNum(programNumbers);
-        } else {
-          console.error("Error fetching results:", response.data.error);
-        }
-      })
-      .catch((error) => {
-        console.error("Error fetching results:", error);
-      });
-  }, [userId]);
+  
 
   const handleAnswerTriviaClick = () => {
     navigate("/about-program-2");
