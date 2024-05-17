@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
- background-color: #1947ba;
+ background-color:  rgb(24, 89, 169);
 }
 
 /* Apply styles to the registration-container */
@@ -22,7 +22,7 @@ body {
  
   border-radius: 8px;
   
-  background-color:#1947ba;
+  background-color: rgb(24, 89, 169);
   color: #fff;
   text-align: center;
   margin-bottom: 20px;
@@ -48,7 +48,7 @@ form {
 
 .input-container {
   display: grid;
-  gap: 12px;
+  gap: 0px;
 }
 
 .input-field {
@@ -119,8 +119,11 @@ button:disabled {
   color: #721c24;
 }
 
+
+
+
 @media screen and (max-width: 500px) {
-  /* .registration-container {
+  .registration-container {
     max-width: 400px;
     padding: 20px;
    
@@ -134,7 +137,7 @@ button:disabled {
     width: 276px;
     height: 350px;
     margin-left: -41px;
-} */
+}
 .reg-button {
   padding: 12px;
   background-color: grey;
@@ -143,14 +146,19 @@ button:disabled {
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 32px;
   margin-left: 5rem;
+}
+.input-container {
+  display: grid;
+  gap: 12px;
+  margin-left: -1rem;
 }
 
 }
 
 @media screen  and (max-width:420px){
-  /* .registration-container {
+  .registration-container {
     max-width: 400px;
     padding: 20px;
    
@@ -163,8 +171,8 @@ button:disabled {
     font-family: 'DINCond-Bold', sans-serif;
     width: 204px;
     height: 334px;
-    margin-left: -92px;
-} */
+    margin-left: -36px;
+}
 /* .input-field{
   width: 100%;
   padding: 10px;
@@ -175,14 +183,6 @@ button:disabled {
   margin-left: -7px;
   width: 196px !important;
 } */
-.input-field {
-  display: grid;
-  grid-template-columns: 100px auto;
-  align-items: center;
-  margin-left: -84px;
-  width: 277px;
-}
-}
 input {
   width: 100%;
   padding: 10px;
@@ -191,9 +191,8 @@ input {
   font-size: 16px;
   box-sizing: border-box;
   margin-left: -7px;
-  width: 196px ;
+  width: 196px !important;
 }
-
 .reg-button {
   padding: 12px;
   background-color: grey;
@@ -202,44 +201,20 @@ input {
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
-  margin-top: 20px;
-  margin-left: 66px;
+  margin-top: 32px;
+  margin-left: 54px;
 }
 h2 {
-  margin-left: 1rem;
-  text-align: center;
+  font-size: 19px;
   margin-bottom: 20px;
-  font-family: 'DINCond-Bold', sans-serif;
+}
 }
 
 
-@media screen and (max-width: 400px) {
-  input {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-size: 16px;
-      box-sizing: border-box;
-      width: 278px !important;
-      margin-left: -7px;
-  }
-}
 
-@media screen  and (max-width:390px){
-  .registration-container {
-    max-width: 400px;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: rgb(24, 89, 169);
-    color: #fff;
-    text-align: center;
-    margin-bottom: 20px;
-    font-family: 'DINCond-Bold', sans-serif;
-    width: 204px;
-    height: 334px;
-    margin-left: -92px;
-}
+
+@media screen  and (max-width:350px){
+
   input {
     width: 100%; 
     padding: 8px;
@@ -251,11 +226,31 @@ h2 {
    
     width: 90px;
 }
+.input-container {
+  display: grid;
+  gap: 12px;
+  margin-left: 0rem;
+}
 
 }
 
-
   @media screen  and (max-width:300px){
+    .reg-button {
+      padding: 12px;
+      background-color: grey;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+      margin-left: 47px;
+  }
+    .input-container {
+      display: grid;
+      gap: 12px;
+      margin-left: 1rem;
+  }
     input {
       width: 100%;
       padding: 7px;
@@ -263,7 +258,7 @@ h2 {
       border-radius: 1px;
       font-size: 15px;
       box-sizing: border-box;
-      margin-left: -18px;
+      margin-left: 2rem;
   }
 
   h2 {

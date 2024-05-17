@@ -37,13 +37,21 @@ body {
   margin-bottom: 20px; /* Spacing below the logo */
 }
 .h1{
+  margin-top: 3rem;
   line-height: 1.9rem;
   font-family: 'DINCond-Bold', sans-serif; 
 }
 
 h3{
+  margin-top: 1rem;
   line-height: 1.5rem;
   font-family: 'DINCond-Bold', sans-serif; 
+}
+h4{
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-family: 'DINCond-Bold', sans-serif; 
+
 }
 .welcome-heading, .guide-heading, .program-info ,.black-button{
   font-family: 'DINCond-Bold', sans-serif; /* Use DINCond-Bold font for headings */
@@ -215,9 +223,9 @@ h3{
 @media screen  and (max-width:300px){
 
   .program-info {
-    margin: 10px 0; /* Adjust margin as needed */
-    font-size: 15px;
-  }
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
   
   .wel-button {
     padding: 12px;

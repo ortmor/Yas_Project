@@ -52,7 +52,7 @@ const RegistrationForm = () => {
 
   return (
     <div className="reg-full-page">
-      <div className="registration-container">
+      <div className="registration-container" style={{boxShadow:"none"}}>
         <img src="/ADNOC YiS Lockup_NEG.png" alt="Logo" className="reg-logo" />
         <h2>REGISTRATION</h2>
         <form onSubmit={handleSubmit}>

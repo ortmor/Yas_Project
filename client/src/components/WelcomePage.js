@@ -55,11 +55,11 @@ const WelcomePage = () => {
         <div className="content">
           <h1 className="welcome-heading">WELCOME</h1>
           <h3 className="guide-heading">VISITOR GUIDE</h3>
-          <h3 className="program-info">
+          <h4 className="program-info">
             Learn more about our world-class
             Science, Technology, Engineering
             and Math (STEM) programs
-          </h3>
+          </h4>
           <div className="button-containerwelcome">
             {!user.login ? (
               <>

@@ -11,28 +11,27 @@
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
-  
   border-radius: 8px;
-
-  background-color:#1947ba; /* Ink blue background color */
+  /* background-color:#1947ba;  */
   width: 310px;
   height: 406px;
   
   
 }
 .grey-button{
-  margin-top: 133px !important;
-  margin-left: 113px !important;
-  background-color: grey !important;
+  margin-top: 70px ;
+  margin-left: 113px ;
+  background-color: grey;
   width: 110px;
 }
 .login-logo {
   display: block;
   margin: 0 auto;
-  width: 259px !important; /* Adjust logo width */
+  width: 259px ; 
 }
 
 h2 {
+  margin-top: 3rem;
   text-align: center;
   margin-bottom: 20px;
   font-family: 'DINCond-Bold', sans-serif;
@@ -40,6 +39,7 @@ h2 {
 }
 
 .input-field {
+  margin-top: 5rem;
   margin-bottom: 16px;
   
 }
@@ -55,6 +55,7 @@ input {
   border-radius: 4px;
   font-size: 16px;
   box-sizing: border-box;
+  margin-top: -3rem;
 }
 
 button {
@@ -105,9 +106,9 @@ box-sizing: border-box;
 width: 236px !important;
 }
 .grey-button {
-margin-top: 97px !important;
-margin-left: 68px !important;
-background-color: grey !important;
+margin-top: 97px;
+margin-left: 68px ;
+background-color: grey ;
 width: 110px;
 }
 }
@@ -135,9 +136,9 @@ input {
   width: 253px !important;
 }
 .grey-button {
-margin-top: 106px !important;
-margin-left: 72px !important;
-background-color: grey !important;
+margin-top: 106px ;
+margin-left: 40px ;
+background-color: grey;
 width: 110px;
 }
 }

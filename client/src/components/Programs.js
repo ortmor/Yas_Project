@@ -21,7 +21,7 @@ const Programs = () => {
   ];
 
   const handleNextProgram = () => {
-    navigate('/qr-scanner'); // Navigate to the QR scanner page
+    navigate('/qr-scanner'); 
   };
   const handleProgramSelection = (programNumber) => {
     setActiveProgram(programNumber);

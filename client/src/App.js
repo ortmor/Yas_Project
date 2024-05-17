@@ -23,7 +23,7 @@ import AboutPageDetails2 from "./components/AboutPageDetails2";
 import AboutPageDetails3 from "./components/AboutPageDetails3";
 import AboutPageDetails4 from "./components/AboutPageDetails4";
 import LoginPage from "./components/LoginPage";
-import QrScannerPage from "./components/QrScannerPage";
+import QrScannerPage from "./components/QRScanner";
 import PrivateRoute from "./components/PrivateRoute";
 import PageNotFound1 from "./components/PageNotFound1";
 import UnprotectedRoute from "./components/UnprotectedRoute";
