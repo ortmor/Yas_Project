@@ -59,13 +59,7 @@ const App = () => {
     <Router>
       <div className="app-container">
         <Routes>
-
-          <Route path="" element={<UnprotectedRoute />}>
-          <Route path="/" element={<WelcomePage />} />
-            <Route path="/registration" element={<RegistrationForm />} />
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/thank-you" element={<ThankyouPage />} />
-            <Route path="/about-page-details" element={<AboutPageDetails />} />
+        <Route path="/about-page-details" element={<AboutPageDetails />} />
             <Route
               path="/about-page-details-2"
               element={<AboutPageDetails2 />}
@@ -78,6 +72,12 @@ const App = () => {
               path="/about-page-details-4"
               element={<AboutPageDetails4 />}
             />
+          <Route path="" element={<UnprotectedRoute />}>
+          <Route path="/" element={<WelcomePage />} />
+            <Route path="/registration" element={<RegistrationForm />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/thank-you" element={<ThankyouPage />} />
+          
           </Route>
 
           <Route path="" element={<PrivateRoute />}>
