@@ -4,7 +4,7 @@
   align-items: center;
   height: 222vh;
 
-  background-color: rgb(24, 89, 169); /* Ink blue background color */
+  background-color:#1947ba; /* Ink blue background color */
 }
 
 .login-container {
@@ -14,7 +14,7 @@
   
   border-radius: 8px;
 
-  background-color: rgb(24, 89, 169); /* Ink blue background color */
+  background-color:#1947ba; /* Ink blue background color */
   width: 310px;
   height: 406px;
   

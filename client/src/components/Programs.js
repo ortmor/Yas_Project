@@ -32,7 +32,6 @@ const Programs = () => {
 
 console.log(user,"userpro");
   useEffect(() => {
-    console.log(userId,user.details,"_____________________");
     if(!userId)return
     
     axios

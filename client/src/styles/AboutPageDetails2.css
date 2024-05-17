@@ -1,16 +1,23 @@
+.pro2-containermain{
+  width: 100%;
+  height: 100vh;
+  background-color: #e31e26;
+
+}
+
 .pro2-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
-    background-color: rgb(255, 30, 0);
+    background-color: #ef060e;
     font-family: 'DINCond-Bold', sans-serif; 
     color: #fff;
     
   }
   
   .logo2 {
-    width: 476px !important;
+    width: 476px ;
     margin-bottom: 20px;
     
   }
@@ -70,6 +77,82 @@ font-size: larger;
     background-color: #555;
   }
   
+  @media screen  and (max-width:450px) {
+    
+.pro2-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #ef060e;
+  font-family: 'DINCond-Bold', sans-serif; 
+  color: #fff;
+  
+}
+
+.logo2 {
+  width: 350px;
+  margin-bottom: 20px;
+  
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+/*   
+p {
+  font-size: 20px;
+  line-height: 1.6;
+  font-family: 'DINCond-Bold', sans-serif;
+} */
+
+.post-video-container {
+  margin-top: 40px;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive video */
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tab-container {
+  display: flex;
+  justify-content: center;
+}
+
+.tab-button {
+  width: 200px;
+  padding: 12px;
+  background-color:GREY ;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+font-size: larger;
+
+}
+
+.tab-button:hover {
+  background-color: #555;
+}
+  }
+
+
 
   @media screen  and (max-width:400px) {
     .pro2-container {

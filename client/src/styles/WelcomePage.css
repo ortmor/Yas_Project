@@ -36,8 +36,13 @@ body {
   width: 259px !important;/* Specific width for the logo */
   margin-bottom: 20px; /* Spacing below the logo */
 }
-.h1,h3{
-  
+.h1{
+  line-height: 1.9rem;
+  font-family: 'DINCond-Bold', sans-serif; 
+}
+
+h3{
+  line-height: 1.5rem;
   font-family: 'DINCond-Bold', sans-serif; 
 }
 .welcome-heading, .guide-heading, .program-info ,.black-button{
@@ -49,7 +54,7 @@ body {
 }
 
 .button-containerwelcome{
-  margin-left: -6rem;
+  margin-left: -11rem;
 }
 .wel-button {
   padding: 12px; /* Padding inside the button */
@@ -60,7 +65,7 @@ body {
   font-size: 16px; /* Font size for the button text */
   cursor: pointer; /* Cursor style on hover */
   margin-top: 22px;
-  margin-left: 337px;
+  margin-left: 200px;
   width: 119px;
 
 }
@@ -142,7 +147,7 @@ body {
     cursor: pointer; /* Cursor style on hover */
   
     margin-top: 14px;
-    margin-left: 90px;
+    margin-left: 176px;
 
     width: 98px;
   
@@ -152,6 +157,8 @@ body {
     background-color: #333; /* Darker background color on hover */
   }
 }
+
+
 @media screen  and (max-width:500px) {
   .full-page {
     display: flex;
@@ -169,7 +176,7 @@ body {
   font-size: 16px;
   cursor: pointer;
   margin-top: 14px;
-  margin-left: 74px;
+  margin-left: 100px;
   width: 98px;
 }
 }
@@ -200,7 +207,7 @@ body {
     font-size: 16px;
     cursor: pointer;
     margin-top: 14px;
-    margin-left: 98px;
+    margin-left: 186px;
     width: 98px;
 }
 
@@ -221,7 +228,7 @@ body {
     font-size: 16px;
     cursor: pointer;
     margin-top: 14px;
-    margin-left: 75px;
+    margin-left: 165px;
     width: 98px;
 }
 

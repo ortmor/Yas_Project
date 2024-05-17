@@ -57,9 +57,7 @@ const WelcomePage = () => {
           <h3 className="guide-heading">VISITOR GUIDE</h3>
           <h3 className="program-info">
             Learn more about our world-class
-            <br />
             Science, Technology, Engineering
-            <br />
             and Math (STEM) programs
           </h3>
           <div className="button-containerwelcome">

@@ -7,7 +7,7 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../styles/AboutProgram.css";
 
-const AboutProgram = () => {
+const   AboutProgram = () => {
   const { user } = useSelector((state) => state);
   const navigate = useNavigate();
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
