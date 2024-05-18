@@ -533,7 +533,7 @@
       transition: background-color 0.3s ease;
       background-color: white;
       width: 190px;
-      margin-left: 0rem;
+      margin-left: 2rem;
     }
     
     .answer-option4:hover {
@@ -558,7 +558,7 @@
       font-size: 16px;
       cursor: pointer;
      width: 156px;
-      margin-left: 2rem;
+      margin-left: 4rem;
     }
     
     .next-button4:hover {

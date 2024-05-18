@@ -106,10 +106,10 @@ box-sizing: border-box;
 width: 236px !important;
 }
 .grey-button {
-margin-top: 97px;
-margin-left: 68px ;
-background-color: grey ;
-width: 110px;
+  margin-top: 97px;
+  margin-left: 80px;
+  background-color: grey;
+  width: 110px;
 }
 }
 @media screen  and (max-width:400px){
@@ -136,10 +136,10 @@ input {
   width: 253px !important;
 }
 .grey-button {
-margin-top: 106px ;
-margin-left: 40px ;
-background-color: grey;
-width: 110px;
+  margin-top: 106px;
+  margin-left: 60px;
+  background-color: grey;
+  width: 110px;
 }
 }
 

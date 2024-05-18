@@ -533,7 +533,7 @@
       transition: background-color 0.3s ease;
       background-color: white;
       width: 190px;
-      margin-left: 0rem;
+      margin-left: 2rem;
     }
     
     .answer-option3:hover {
@@ -558,7 +558,7 @@
       font-size: 16px;
       cursor: pointer;
      width: 156px;
-      margin-left: 2rem;
+      margin-left: 3rem;
     }
     
     .next-button3:hover {
@@ -648,7 +648,7 @@
       transition: background-color 0.3s ease;
       background-color: white;
       width: 200px;
-      margin-left: 0rem;
+      margin-left: 2rem;
     }
     
     .answer-option3:hover {
@@ -673,7 +673,7 @@
       font-size: 16px;
       cursor: pointer;
      width: 156px;
-      margin-left: 2rem;
+      margin-left: 3rem;
     }
     
     .next-button3:hover {
