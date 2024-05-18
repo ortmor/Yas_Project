@@ -53,22 +53,17 @@ const App = () => {
   }, [refresh, dispatch]);
   console.log(user, "user");
   if (checkingAuth) {
-   return <p>Loading...</p>;
+    return <p>Loading...</p>;
   }
   return (
     <Router>
       <div className="app-container">
         <Routes>
-        
           <Route path="" element={<UnprotectedRoute />}>
-          <Route path="/" element={<WelcomePage />} />
+            <Route path="/" element={<WelcomePage />} />
             <Route path="/registration" element={<RegistrationForm />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/thank-you" element={<ThankyouPage />} />
-            <Route path="/about-program" element={<AboutProgram />} />
-            <Route path="/about-program-2" element={<AboutProgram2 />} />
-            <Route path="/about-program-3" element={<AboutProgram3 />} />
-            <Route path="/about-program-4" element={<AboutProgram4 />} />
           </Route>
 
           <Route path="" element={<PrivateRoute />}>
@@ -86,12 +81,14 @@ const App = () => {
               path="/about-page-details-4"
               element={<AboutPageDetails4 />}
             />
-            
-          
+            <Route path="/about-program" element={<AboutProgram />} />
+            <Route path="/about-program-2" element={<AboutProgram2 />} />
+            <Route path="/about-program-3" element={<AboutProgram3 />} />
+            <Route path="/about-program-4" element={<AboutProgram4 />} />
+
             <Route path="/programs" element={<Programs />} />
             <Route path="/video" element={<VideoPage />} />
             <Route path="/qr-scanner" element={<QrScannerPage />} />
-           
           </Route>
           <Route path="*" element={<PageNotFound1 />} />
         </Routes>
