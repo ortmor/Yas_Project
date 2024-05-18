@@ -51,7 +51,7 @@
     color: grey;
   }
   
-  .answer-option {
+  .answer-optiontwo {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,15 +66,15 @@
     margin-left: 107px;
   }
   
-  .answer-option:hover {
+  .answer-optiontwo :hover {
     background-color: #e0e0e0;
   }
   
-  .answer-option.correct {
+  .answer-optiontwo .correct {
     background-color: #92d050;
   }
   
-  .answer-option.incorrect {
+  .answer-optiontwo .incorrect {
     background-color: #ffc000;
   }
   .correct {
@@ -86,7 +86,7 @@
     background-color: #ffc000;
     
   }
-  .next-button {
+  .next-buttontwo {
     margin-top: 20px;
     padding: 12px;
     background-color:rgb(113, 112, 115) ;
@@ -99,7 +99,7 @@
     margin-left: 222px;
   }
   
-  .next-button:hover {
+  .next-buttontwo:hover {
     background-color:rgb(113, 112, 115) ;
   }
   
@@ -108,7 +108,7 @@
     color: red;
     font-weight: bold;
   }
-  .submit-button {
+  .submit-buttontwo {
     margin-top: 20px;
     padding: 12px;
     background-color:rgb(113, 112, 115) ;
@@ -176,7 +176,7 @@
       color: grey;
     }
     
-    .answer-option {
+    .answer-optiontwo  {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -191,15 +191,15 @@
       margin-left: 77px;
     }
     
-    .answer-option:hover {
+    .answer-optiontwo :hover {
       background-color: #e0e0e0;
     }
     
-    .answer-option.correct {
+    .answer-optiontwo .correct {
       background-color: #92d050;
     }
     
-    .answer-option.incorrect {
+    .answer-optiontwo .incorrect {
       background-color: #ffc000;
     }
     .correct {
@@ -211,7 +211,7 @@
       background-color: #ffc000;
       
     }
-    .next-button {
+    .next-buttontwo {
       margin-top: 20px;
       padding: 12px;
       background-color:rgb(113, 112, 115) ;
@@ -224,7 +224,7 @@
       margin-left: 181px;
     }
     
-    .next-button:hover {
+    .next-buttontwo:hover {
       background-color:rgb(113, 112, 115) ;
     }
     
@@ -233,7 +233,7 @@
       color: red;
       font-weight: bold;
     }
-    .submit-button {
+    .submit-buttontwo {
       margin-top: 20px;
       padding: 12px;
       background-color:rgb(113, 112, 115) ;
@@ -243,7 +243,7 @@
       font-size: 16px;
       cursor: pointer;
       width: 156px;
-      margin-left: 222px;
+      margin-left: 1px;
     }
     
     .submit-button:hover {
@@ -302,7 +302,7 @@
       color: grey;
     }
     
-    .answer-option {
+    .answer-optiontwo  {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -317,15 +317,15 @@
       margin-left: 5rem;
     }
     
-    .answer-option:hover {
+    .answer-optiontwo :hover {
       background-color: #e0e0e0;
     }
     
-    .answer-option.correct {
+    .answer-optiontwo .correct {
       background-color: #92d050;
     }
     
-    .answer-option.incorrect {
+    .answer-optiontwo .incorrect {
       background-color: #ffc000;
     }
     .correct {
@@ -337,7 +337,7 @@
       background-color: #ffc000;
       
     }
-    .next-button {
+    .next-buttontwo {
       margin-top: 20px;
     padding: 12px;
     background-color: rgb(113, 112, 115);
@@ -350,7 +350,7 @@
     margin-left: 8rem;
     }
     
-    .next-button:hover {
+    .next-buttontwo:hover {
       background-color: lightgray;
     }
     
@@ -359,17 +359,17 @@
       color: red;
       font-weight: bold;
     }
-    .submit-button {
+    .submit-buttontwo {
       margin-top: 20px;
-    padding: 12px;
-    background-color:rgb(113, 112, 115) ;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    width: 156px;
-    margin-left: 222px;
+      padding: 12px;
+      background-color:rgb(113, 112, 115) ;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 156px;
+      margin-left: 1px;
     }
     
     .submit-button:hover {
@@ -424,7 +424,7 @@
       color: grey;
     }
     
-    .answer-option {
+    .answer-optiontwo  {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -439,15 +439,15 @@
       margin-left: 1rem;
   }
     
-    .answer-option:hover {
+    .answer-optiontwo :hover {
       background-color: #e0e0e0;
     }
     
-    .answer-option.correct {
+    .answer-optiontwo .correct {
       background-color: #92d050;
     }
     
-    .answer-option.incorrect {
+    .answer-optiontwo .incorrect {
       background-color: #ffc000;
     }
     .correct {
@@ -459,7 +459,7 @@
       background-color: #ffc000;
       
     }
-    .next-button {
+    .next-buttontwo {
       margin-top: 20px;
       padding: 12px;
       background-color:rgb(113, 112, 115) ;
@@ -472,7 +472,7 @@
       margin-left: 4rem;
     }
     
-    .next-button:hover {
+    .next-buttontwo:hover {
       background-color:rgb(113, 112, 115) ;
     }
     
@@ -481,17 +481,17 @@
       color: red;
       font-weight: bold;
     }
-    .submit-button {
+    .submit-buttontwo {
       margin-top: 20px;
-    padding: 12px;
-    background-color:rgb(113, 112, 115) ;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    width: 156px;
-    margin-left: 1px;
+      padding: 12px;
+      background-color:rgb(113, 112, 115) ;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 156px;
+      margin-left: 1px;
     }
     
     .submit-button:hover {
@@ -545,7 +545,7 @@
       color: grey;
     }
     
-    .answer-option {
+    .answer-optiontwo  {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -560,15 +560,15 @@
       margin-left: 0rem;
     }
     
-    .answer-option:hover {
+    .answer-optiontwo :hover {
       background-color: #e0e0e0;
     }
     
-    .answer-option.correct {
+    .answer-optiontwo .correct {
       background-color: #92d050;
     }
     
-    .answer-option.incorrect {
+    .answer-optiontwo .incorrect {
       background-color: #ffc000;
     }
     .correct {
@@ -580,7 +580,7 @@
       background-color: #ffc000;
       
     }
-    .next-button {
+    .next-buttontwo {
       margin-top: 20px;
       padding: 12px;
       background-color:rgb(113, 112, 115) ;
@@ -593,7 +593,7 @@
       margin-left: 2rem;
     }
     
-    .next-button:hover {
+    .next-buttontwo:hover {
       background-color:rgb(113, 112, 115) ;
     }
     
@@ -602,17 +602,17 @@
       color: red;
       font-weight: bold;
     }
-    .submit-button {
+    .submit-buttontwo {
       margin-top: 20px;
-    padding: 12px;
-    background-color:rgb(113, 112, 115) ;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    width: 156px;
-    margin-left: 1px;
+      padding: 12px;
+      background-color:rgb(113, 112, 115) ;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 156px;
+      margin-left: 1px;
     }
     
     .submit-button:hover {
@@ -669,7 +669,7 @@
       color: grey;
     }
     
-    .answer-option {
+    .answer-optiontwo  {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -684,15 +684,15 @@
       margin-left: 1rem;
     }
     
-    .answer-option:hover {
+    .answer-optiontwo :hover {
       background-color: #e0e0e0;
     }
     
-    .answer-option.correct {
+    .answer-optiontwo .correct {
       background-color: #92d050;
     }
     
-    .answer-option.incorrect {
+    .answer-optiontwo .incorrect {
       background-color: #ffc000;
     }
     .correct {
@@ -704,7 +704,7 @@
       background-color: #ffc000;
       
     }
-    .next-button {
+    .next-buttontwo {
       margin-top: 20px;
       padding: 12px;
       background-color:rgb(113, 112, 115) ;
@@ -717,7 +717,7 @@
       margin-left: 1rem;
     }
     
-    .next-button:hover {
+    .next-buttontwo:hover {
       background-color:rgb(113, 112, 115) ;
     }
     
@@ -726,7 +726,7 @@
       color: red;
       font-weight: bold;
     }
-    .submit-button {
+    .submit-buttontwo {
       margin-top: 20px;
       padding: 12px;
       background-color:rgb(113, 112, 115) ;
@@ -738,7 +738,6 @@
       width: 156px;
       margin-left: 1px;
     }
-    
     .submit-button:hover {
       background-color:rgb(113, 112, 115) ;
     }
@@ -790,7 +789,7 @@
       color: grey;
     }
     
-    .answer-option {
+    .answer-optiontwo {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -804,15 +803,15 @@
       width: 170px;
     }
     
-    .answer-option:hover {
+    .answer-optiontwo :hover {
       background-color: #e0e0e0;
     }
     
-    .answer-option.correct {
+    .answer-optiontwo .correct {
       background-color: #92d050;
     }
     
-    .answer-option.incorrect {
+    .answer-optiontwo .incorrect {
       background-color: #ffc000;
     }
     .correct {
@@ -824,7 +823,7 @@
       background-color: #ffc000;
       
     }
-    .next-button {
+    .next-buttontwo {
       margin-top: 20px;
     
     padding: 12px;
@@ -838,7 +837,7 @@
     margin-left: 1rem;
     }
     
-    .next-button:hover {
+    .next-buttontwo:hover {
       background-color:rgb(113, 112, 115) ;
     }
     
@@ -847,7 +846,7 @@
       color: red;
       font-weight: bold;
     }
-    .submit-button {
+    .submit-buttontwo {
       margin-top: 20px;
       padding: 12px;
       background-color:rgb(113, 112, 115) ;
@@ -857,7 +856,7 @@
       font-size: 16px;
       cursor: pointer;
       width: 156px;
-   margin-left: 1px;
+      margin-left: 1px;
     }
     
     .submit-button:hover {

@@ -154,7 +154,7 @@ const AboutProgram4 = () => {
             return (
               <div
                 key={index}
-                className={`answer-option ${
+                className={`answer-option4 ${
                   isOptionSelected ? "selected" : ""
                 } ${optionClass}`}
                 onClick={() => handleAnswerSelect(index)}
@@ -178,7 +178,7 @@ const AboutProgram4 = () => {
           NEXT QUESTION
         </button>
         {currentQuestionIndex === questions.length - 1 && (
-          <button  className="next-button4" onClick={handleFinishProgram}>SUBMIT</button>
+          <button  className="submit-buttonfour" onClick={handleFinishProgram}>SUBMIT</button>
         )}
         <ToastContainer />
       </div>

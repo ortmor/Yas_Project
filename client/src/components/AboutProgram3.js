@@ -178,7 +178,7 @@ const AboutProgram3 = () => {
           NEXT QUESTION
         </button>
         {currentQuestionIndex === questions.length - 1 && (
-          <button className="next-button3" onClick={handleFinishProgram}>SUBMIT</button>
+          <button className="submit-buttonthree" onClick={handleFinishProgram}>SUBMIT</button>
         )}
         <ToastContainer />
       </div>

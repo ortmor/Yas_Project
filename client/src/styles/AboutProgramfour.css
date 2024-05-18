@@ -106,7 +106,7 @@
     color: red;
     font-weight: bold;
   }
-  .submit-button {
+  .submit-buttonfour {
     margin-top: 20px;
   padding: 12px;
   background-color:rgb(113, 112, 115) ;
@@ -116,7 +116,7 @@
   font-size: 16px;
   cursor: pointer;
   width: 156px;
-  margin-left: 222px;
+  margin-left: 1px;
   }
   
   .submit-button:hover {
@@ -186,7 +186,7 @@
       transition: background-color 0.3s ease;
       background-color: white;
       width: 290px;
-      margin-left: 1rem;
+      margin-left: 7rem;
     }
     
     .answer-option4:hover {
@@ -312,7 +312,7 @@
       transition: background-color 0.3s ease;
       background-color: white;
       width: 260px;
-      margin-left: 0rem;
+      margin-left: 7rem;
     }
     
     .answer-option4:hover {
@@ -443,7 +443,7 @@
       transition: background-color 0.3s ease;
       background-color: white;
       width: 250px;
-      margin-left: 0rem;
+      margin-left: 2rem;
     }
     
     .answer-option4:hover {
@@ -507,7 +507,7 @@
     }
   }
   
-  @media screen  and (max-width:400px){
+  @media screen  and (max-width:390px){
     
      
     .about-containerfour {
@@ -565,7 +565,7 @@
       transition: background-color 0.3s ease;
       background-color: white;
       width: 190px;
-      margin-left: 2rem;
+      margin-left: 1rem;
     }
     
     .answer-option4:hover {
@@ -688,7 +688,7 @@
       transition: background-color 0.3s ease;
       background-color: white;
       width: 200px;
-      margin-left: 0rem;
+      margin-left: 1rem;
     }
     
     .answer-option4:hover {

@@ -377,7 +377,7 @@ const AboutProgram = () => {
           NEXT QUESTION
         </button>
         {currentQuestionIndex === questions.length - 1 && (
-          <button className="next-buttonone" onClick={handleFinishProgram}>
+          <button className="submit-buttonone" onClick={handleFinishProgram}>
             SUBMIT
           </button>
         )}

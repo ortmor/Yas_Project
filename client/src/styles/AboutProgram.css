@@ -100,7 +100,7 @@ p {
   font-size: 16px;
   cursor: pointer;
  width: 156px;
-  margin-left: 222px;
+  margin-left: 25px;
 }
 
 .next-buttonone:hover {
@@ -112,7 +112,7 @@ p {
   color: red;
   font-weight: bold;
 }
-.submit-button {
+.submit-buttonone {
   margin-top: 20px;
   padding: 12px;
   background-color:rgb(113, 112, 115) ;
@@ -122,9 +122,8 @@ p {
   font-size: 16px;
   cursor: pointer;
   width: 156px;
-  margin-left: 222px;
+  margin-left: 34px;
 }
-
 .submit-button:hover {
   background-color:rgb(113, 112, 115) ;
 }
@@ -235,7 +234,7 @@ p {
     color: red;
     font-weight: bold;
   }
-  .submit-button {
+  .submit-buttonone {
     margin-top: 20px;
     padding: 12px;
     background-color:rgb(113, 112, 115) ;
@@ -245,7 +244,7 @@ p {
     font-size: 16px;
     cursor: pointer;
     width: 156px;
-    margin-left: 222px;
+    margin-left: 34px;
   }
   
   .submit-button:hover {
@@ -359,7 +358,7 @@ p {
     color: red;
     font-weight: bold;
   }
-  .submit-button {
+  .submit-buttonone {
     margin-top: 20px;
     padding: 12px;
     background-color:rgb(113, 112, 115) ;
@@ -369,7 +368,7 @@ p {
     font-size: 16px;
     cursor: pointer;
     width: 156px;
-    margin-left: 222px;
+    margin-left: 34px;
   }
   
   .submit-button:hover {
