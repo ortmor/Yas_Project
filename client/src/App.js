@@ -64,7 +64,6 @@ const App = () => {
             <Route path="/registration" element={<RegistrationForm />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/thank-you" element={<ThankyouPage />} />
-
           </Route>
 
           <Route path="" element={<PrivateRoute />}>

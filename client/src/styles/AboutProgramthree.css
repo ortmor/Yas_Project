@@ -388,11 +388,7 @@
   
   @media screen  and (max-width:449px){
     
-    .about-containermain3 {
-      width: 100%;
-      height: 100%;
-      background-color: rgb(113, 112, 115);
-  }
+
     .about-containerthree {
       max-width: 800px;
       margin-left: 3rem;
