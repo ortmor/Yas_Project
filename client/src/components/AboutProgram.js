@@ -160,7 +160,7 @@ const AboutProgram = () => {
             return (
               <div
                 key={index}
-                className={`answer-option ${
+                className={`answer-optionone ${
                   isOptionSelected ? "selected" : ""
                 } ${optionClass}`}
                 onClick={() => handleAnswerSelect(index)}
@@ -174,7 +174,7 @@ const AboutProgram = () => {
           <div className="alert-message">Please select an answer!</div>
         )}
         <button
-          className="next-button"
+          className="next-buttonone"
           onClick={handleNextQuestion}
           style={{
             display:
@@ -184,7 +184,7 @@ const AboutProgram = () => {
           NEXT QUESTION
         </button>
         {currentQuestionIndex === questions.length - 1 && (
-          <button className="next-button" onClick={handleFinishProgram}>SUBMIT</button>
+          <button className="next-buttonone" onClick={handleFinishProgram}>SUBMIT</button>
         )}
         <ToastContainer />
       </div>
