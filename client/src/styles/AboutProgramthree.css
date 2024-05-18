@@ -390,12 +390,11 @@
     
     .about-containermain3 {
       width: 100%;
-      height: unset;
+      height: 100%;
       background-color: rgb(113, 112, 115);
   }
     .about-containerthree {
       max-width: 800px;
-      margin-bottom: 3rem;
       margin-left: 3rem;
       margin-right: 3rem;
       padding: 2rem;
@@ -516,7 +515,7 @@
      
     .about-containerthree {
       max-width: 100%;
-      margin-bottom: 3rem;
+  
       margin-left: 3rem;
       margin-right: 3rem;
       padding: 2rem;
@@ -637,7 +636,7 @@
      
     .about-containerthree {
       max-width: 100%;
-      margin-bottom: 1rem;
+     
       margin-left: 1rem;
       margin-right: 1rem;
       padding: 2rem;
@@ -761,7 +760,7 @@
      
     .about-containerthree {
       max-width: 100%;
-      margin-bottom: 1rem;
+     
       margin-left: 1rem;
       margin-right: 1rem;
       padding: 2rem;
