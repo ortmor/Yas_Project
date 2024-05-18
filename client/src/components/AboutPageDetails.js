@@ -23,13 +23,13 @@ const AboutPageDetails = () => {
           className="abt-logo"
         />
 
-        <p>
-          Children aged 6-13 form their own mini <br />
-          motorsport team, develop a team brand, <br />
-          then apply this to various project elements <br />
-          they produce including a scale model race <br />
-          car, built from paper card. ‘Ethara’ is <br />
-          Arabic for ‘Thrill’, the program aims to <br />
+        <p className="aboutpara_1">
+          Children aged 6-13 form their own mini 
+          motorsport team, develop a team brand, 
+          then apply this to various project elements 
+          they produce including a scale model race 
+          car, built from paper card. ‘Ethara’ is 
+          Arabic for ‘Thrill’, the program aims to
           excite children about STEM learning.
         </p>
         {/* Video section */}
@@ -48,7 +48,7 @@ const AboutPageDetails = () => {
             {/* <button className="tab-button" onClick={handleFullscreenClick}>
             Fullscreen
           </button> */}
-            <button className="tab-button" onClick={handleAnswerTriviaClick}>
+            <button className="tab-buttonone" onClick={handleAnswerTriviaClick}>
               CONTINUE
             </button>
           </div>

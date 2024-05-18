@@ -135,7 +135,7 @@ const AboutProgram = () => {
   return (
     <div className="about-containermain2">
     <div className="about-containertwo">
-      <img src="/F1_RM_in_Schools_Stk_White_Micro.png" alt="Logo" className="abtpro-logo" />
+      <img src="/F1_RM_InSchools_Localised_UAE_Lockup01_Stk_White_Standard.png" alt="Logo" className="abtpro-logo" />
       <h3>TRIVIA TIME</h3>
       <h4>Question {currentQuestionIndex + 1}/{questions.length}</h4>
       <p>{currentQuestion.questiontwo}</p>

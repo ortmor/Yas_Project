@@ -26,11 +26,11 @@
     margin-bottom: 20px;
   }
   
-  p {
-    font-size: 1.9rem;
-    font-weight: 200;
-    line-height: 1.6;
-    font-family: 'DINCond-Bold', sans-serif;
+  .aboutpara_1 {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-family: 'DINCond-Bold'; 
   }
   
   .post-video-container {
@@ -60,9 +60,9 @@
     margin: auto;
   }
   
-  .tab-button {
+  .tab-buttonone {
     width: 200px;
-    background-color:GREY ;
+    background-color: rgb(113, 112, 115);
     border: none;
     border-radius: 8px;
     font-size: 16px;
@@ -73,10 +73,41 @@
 
   }
   
-  .tab-button:hover {
-    background-color: #555;
+  .tab-buttonone:hover {
+    background-color: rgb(113, 112, 115);
   }
   
+
+
+@media screen  and (max-width:500px) {
+  .aboutcontainer {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+     background-color: rgb(0, 137, 150);
+      font-family: 'DINCond-Bold', sans-serif; 
+      color: #fff;
+      
+    }
+
+    .aboutpara_1 {
+      width: 90%;
+      margin-top: 2rem;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      font-family: 'DINCond-Bold';
+  }
+
+  .abt-logo {
+      width: 281px !important;
+      margin-bottom: 20px;
+      
+    }
+    
+
+}
+
 
   @media screen  and (max-width:400px) {
     .aboutcontainer {
@@ -90,10 +121,12 @@
         
       }
 
-      p {
-        font-size: 1rem;
-        line-height: 1.6;
-        font-family: 'DINCond-Bold', sans-serif;
+      .aboutpara_1 {
+        width: 90%;
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        font-family: 'DINCond-Bold';
     }
 
     .abt-logo {
@@ -108,11 +141,12 @@
 
   @media screen  and (max-width:300px) {
     .abt-logo {
-        width: 228px !important;
+        width: 200px;
         margin-bottom: 20px;
         
       }
-      p {
+
+      .aboutpara_1 {
         font-size: 0.8rem;
         line-height: 1.6;
         font-family: 'DINCond-Bold', sans-serif;

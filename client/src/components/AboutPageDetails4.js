@@ -22,11 +22,11 @@ function AboutPageDetails4() {
         <img src="/ADNOC YiS Lockup_NEG.png" alt="Logo" className="logo" />
 
         <h1>SCIENCE OF RACING!</h1>
-        <p>
-          Racing head-to-head on the 20-metre track <br />
-          is the pinnacle of the Formula Ethara & F1 <br />
-          in Schools programs. To be fast, students <br />
-          must gain an understanding of the related <br />
+        <p className="aboutpro_4">
+          Racing head-to-head on the 20-metre track 
+          is the pinnacle of the Formula Ethara & F1 
+          in Schools programs. To be fast, students 
+          must gain an understanding of the related 
           science and math.
         </p>
         {/* Video section */}

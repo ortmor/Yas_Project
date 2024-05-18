@@ -21,13 +21,13 @@ function AboutPageDetails3() {
       <div className="pro3-container">
         <img src="/4x4iS - Lockup_NEG.png" alt="Logo" className="logo3" />
 
-        <p>
-          Students aged 13-24 work in teams to <br />
-          engineer, build and code a remotely <br />
-          controlled mini four-wheel drive vehicle to <br />
-          successfully navigate obstacles on a <br />
-          special terrain track, just as demanding as <br />
-          a real off-road course. The program <br />
+        <p className="aboutpro_3">
+          Students aged 13-24 work in teams to 
+          engineer, build and code a remotely 
+          controlled mini four-wheel drive vehicle to 
+          successfully navigate obstacles on a 
+          special terrain track, just as demanding as 
+          a real off-road course. The program 
           includes App. Development and A.I.
           <br />
         </p>
@@ -47,7 +47,7 @@ function AboutPageDetails3() {
             {/* <button className="tab-button" onClick={handleFullscreenClick}>
             Fullscreen
           </button> */}
-            <button className="tab-button" onClick={handleAnswerTriviaClick}>
+            <button className="tab-buttonthree" onClick={handleAnswerTriviaClick}>
               CONTINUE
             </button>
           </div>

@@ -56,8 +56,8 @@
   
   .tab-button {
     padding: 10px 20px;
-    background-color: white;
-    color: grey; /* Change text color to grey */
+    background-color: rgb(113, 112, 115);
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -67,4 +67,11 @@
   .tab-button:hover {
     background-color: light grey; /* Light grey on hover */
     
+  }
+
+  .aboutpro_4 {
+    width: 90%;
+    font-size: 1rem;
+        line-height: 1.6;
+        font-family: 'DINCond-Bold', sans-serif;
   }

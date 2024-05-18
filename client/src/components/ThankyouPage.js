@@ -21,16 +21,16 @@ const ThankyouPage = () => {
         PARTICIPATING
       </h1>
       {state && state.message && <p>{state.message}</p>}
-      <p>
-        You can continue again by <br />
-        simply scanning another <br />
+      <p className="thankyou_para">
+        You can continue again by 
+        simply scanning another 
         QR code.
         <br />
       </p>
-      <p>
-        To learn even more about <br />
-        ADNOC Yasin Schools or how to <br />
-        involved, visit our website: <br />
+      <p className="thankyou_para">
+        To learn even more about 
+        ADNOC Yasin Schools or how to 
+        involved, visit our website: 
       </p>
       <button className="black-button" onClick={handleGoToWebsite}>
         GO TO THE WEBSITE

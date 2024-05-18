@@ -22,13 +22,13 @@ export default [
         questionthree: "Which of below is a special 4x4 in Schools car feature",
         options: [
             'Fog Lights',
-            'HearAuto Tow Hookt',
+            'Auto Tow Hookt',
             'Launch Control',
         ]
     },
     {
         id: 4,
-        questionthree: "What do teams need to focus on to win the terrain challengeWhich country is known as the Land of the Rising Sun?",
+        questionthree: "What do teams need to focus on to win the terrain challenge?",
         options: [
             'Speed & agility',
             'Precise maneuvering',

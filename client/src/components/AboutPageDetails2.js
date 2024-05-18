@@ -25,13 +25,13 @@ function AboutPageDetails2() {
           className="logo2"
         />
 
-        <p>
-          The official global F1 STEM education <br />
-          program. Students aged 12-17 form <br />
-          enterprise teams develop a brand and <br />
-          manage the Design, Analyse, Make and <br />
-          Test process to engineer and manufacture <br />
-          their own mini F1 in Schools race cars <br />
+        <p className="aboutpro_2">
+          The official global F1 STEM education 
+          program. Students aged 12-17 form 
+          enterprise teams develop a brand and 
+          manage the Design, Analyse, Make and 
+          Test process to engineer and manufacture 
+          their own mini F1 in Schools race cars 
           using industry standard tools.
         </p>
         {/* Video section */}
@@ -50,7 +50,7 @@ function AboutPageDetails2() {
             {/* <button className="tab-button" onClick={handleFullscreenClick}>
             Fullscreen
           </button> */}
-            <button className="tab-button" onClick={handleAnswerTriviaClick}>
+            <button className="tab-buttontwo" onClick={handleAnswerTriviaClick}>
               CONTINUE
             </button>
           </div>
