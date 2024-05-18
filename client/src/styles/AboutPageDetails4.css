@@ -25,7 +25,9 @@
     margin-bottom: 20px;
     font-family: 'DINCond-Bold', sans-serif; 
   }
-  
+  h1{
+    color: #ffffff;
+  }
   .post-video-container {
     width: 100%;
     max-width: 800px; /* Adjust width as needed */

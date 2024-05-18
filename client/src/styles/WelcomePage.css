@@ -21,9 +21,7 @@ body {
 .welcome-container {
   max-width: 400px; /* Maximum width of the container */
   padding: 20px; /* Padding inside the container */
-  
   border-radius: 8px; /* Rounded corners for the container */
-  
   background-color: rgb(24, 89, 169); /* Background color inside the container */
   color: #fff; /* White text color */
   text-align: center; /* Center align all content */
@@ -33,27 +31,31 @@ body {
 }
 
 .welcome-logo {
-  width: 259px !important;/* Specific width for the logo */
+  width: 259px ;/* Specific width for the logo */
   margin-bottom: 20px; /* Spacing below the logo */
 }
-.h1{
+.welcome-heading,.h1{
   margin-top: 3rem;
-  line-height: 1.9rem;
-  font-family: 'DINCond-Bold', sans-serif; 
+  line-height: 2rem;
+  margin-left: -2rem;
+  font-size: 4rem;
+  font-family: 'DINCond-Bold'; 
 }
 
-h3{
-  margin-top: 1rem;
+.guide-heading,.h3{
+  margin-top: 1.5rem;
   line-height: 1.5rem;
-  font-family: 'DINCond-Bold', sans-serif; 
+  font-size: 1.9rem;
+  font-family: 'DINCond-Bold'; 
 }
 h4{
-  margin-top: 1rem;
+  margin-top: 2rem;
   font-size: 1.2rem;
-  font-family: 'DINCond-Bold', sans-serif; 
+  line-height: 1.8rem;
+  font-family: 'DINCond-Bold'; 
 
 }
-.welcome-heading, .guide-heading, .program-info ,.black-button{
+ .program-info ,.black-button{
   font-family: 'DINCond-Bold', sans-serif; /* Use DINCond-Bold font for headings */
 }
 
@@ -66,7 +68,7 @@ h4{
 }
 .wel-button {
   padding: 12px; /* Padding inside the button */
-  background-color: grey; /* Black background color */
+  background-color: rgb(113, 112, 115); /* Black background color */
   color: #fff; /* White text color */
   border: none; /* Remove border */
   border-radius: 4px; /* Rounded corners for the button */
@@ -79,7 +81,7 @@ h4{
 }
 
 .wel-button:hover {
-  background-color: #333; /* Darker background color on hover */
+  background-color: rgb(113, 112, 115); /* Black background color */
 }
 
 
@@ -128,18 +130,33 @@ h4{
     margin-top: 22px;
 
   }
-  .h1,h3{
-    
-    font-family: 'DINCond-Bold', sans-serif; 
+  .welcome-heading,.h1{
+    margin-top: 3rem;
+    line-height: 2rem;
+    margin-left: -1rem;
+    font-size: 3rem;
+    font-family: 'DINCond-Bold'; 
   }
-  .welcome-heading, .program-info ,.black-button{
-    font-family: 'DINCond-Bold', sans-serif; /* Use DINCond-Bold font for headings */
+  
+  .guide-heading,.h3{
+    margin-top: 1.5rem;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    font-family: 'DINCond-Bold'; 
+  }
+  h4{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-family: 'DINCond-Bold'; 
+  
+  }
+   .program-info ,.black-button{
+    font-family: 'DINCond-Bold'; /* Use DINCond-Bold font for headings */
     font-size: large;
 
   }
-  .guide-heading{
-    font-size: small;
-  }
+  
   .program-info {
     margin: 10px 0; /* Adjust margin as needed */
     font-size: medium;

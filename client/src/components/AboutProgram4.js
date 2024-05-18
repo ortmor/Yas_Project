@@ -132,10 +132,11 @@ const AboutProgram4 = () => {
   const currentQuestion = questions[currentQuestionIndex];
 
   return (
+    <div className="about-containermain4">
     <div className="about-containerfour">
-      <img src="/ADNOC YiS Lockup_NEG.png" alt="Logo" className="abtpro-logo" />
-      <h2>TRIVIA TIME</h2>
-      <h3>Question {currentQuestionIndex + 1}/{questions.length}</h3>
+      <img src="/ADNOC YiS Lockup_NEG.png" alt="Logo" className="abtpro4-logo" />
+      <h3>TRIVIA TIME</h3>
+      <h4>Question {currentQuestionIndex + 1}/{questions.length}</h4>
       <p>{currentQuestion.questionfour}</p>
       <div className="options-container">
         {currentQuestion.options.map((option, index) => {
@@ -167,19 +168,20 @@ const AboutProgram4 = () => {
         <div className="alert-message">Please select an answer!</div>
       )}
       <button
-        className="next-button"
+        className="next-button4"
         onClick={handleNextQuestion}
         style={{
           display:
             currentQuestionIndex === questions.length - 1 ? "none" : "block",
         }}
       >
-        Next Question
+       NEXT QUESTION
       </button>
       {currentQuestionIndex === questions.length - 1 && (
-        <button onClick={handleFinishProgram}>Finish Program</button>
+        <button  className="next-button4" onClick={handleFinishProgram}>SUBMIT</button>
       )}
       <ToastContainer />
+    </div>
     </div>
   );
 };

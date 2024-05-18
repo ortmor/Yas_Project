@@ -21,7 +21,7 @@ function AboutPageDetails4() {
       <div className="pro4-container">
         <img src="/ADNOC YiS Lockup_NEG.png" alt="Logo" className="logo" />
 
-        <h2>SCIENCE OF RACING!</h2>
+        <h1>SCIENCE OF RACING!</h1>
         <p>
           Racing head-to-head on the 20-metre track <br />
           is the pinnacle of the Formula Ethara & F1 <br />

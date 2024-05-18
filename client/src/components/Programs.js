@@ -105,10 +105,10 @@ console.log(user,"userpro");
 
         <div className="additional-buttons">
           <button className="extra-button" onClick={handleNextProgram}>
-            <h3>NEXT PROGRAM</h3>
+            <h5>NEXT PROGRAM</h5>
           </button>
           <button className="extra-button1" onClick={handleLogout}>
-            <h3>LOG OUT</h3>
+            <h5>LOG OUT</h5>
           </button>
         </div>
       </div>

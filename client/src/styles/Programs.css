@@ -9,12 +9,14 @@
 
 }
 
-.programs-containermain{
+.programs-containermain {
   width: 100% !important;
-  height: unset;
+  height: 100vh;
   background-color: rgb(24, 89, 169) !important;
-  font-family: 'DINCond-Bold', sans-serif; 
+  font-family: 'DINCond-Bold', sans-serif;
 }
+
+
 
 .programs-container {
   max-width: 800px;
@@ -36,11 +38,12 @@
   gap: 20px;
   justify-items: center;
 }
-  h3 {
+  h5 {
     text-align: center;
     margin-top: 0rem;
     color: white;
-    font-family: 'DINCond-Bold', sans-serif;
+    font-size: medium;
+    font-family: 'DINCond-Bold';
 }
 
 .program-button {
@@ -103,7 +106,7 @@
   width: 180px;
   height: 40px;
   padding: 12px;
-  background-color: grey;
+  background-color: rgb(113, 112, 115);
   color: #ffffff;
   font-size: 16px;
   cursor: pointer;
@@ -117,13 +120,13 @@
   width: 180px;
   height: 40px;
   margin-left: 1rem;
-  background-color: grey;
+  background-color: rgb(113, 112, 115);
 }
 .extra-button:hover {
-  background-color: lightgray;
+  background-color: rgb(113, 112, 115);
 }
 .extra-button1:hover {
-  background-color: lightgray;
+  background-color: rgb(113, 112, 115);
 }
 
 @media screen  and (max-width:600px) {
@@ -341,7 +344,9 @@ width: 100%;
 background-color: rgb(24, 89, 169) !important;
 }
 
-
+.extra-button:hover {
+  background-color: lightgray;
+}
 }
 
 
@@ -377,6 +382,9 @@ background-color: rgb(24, 89, 169) !important;
   grid-template-columns: repeat(2, 1fr);
   gap: 8.5px;
   justify-items: center;
+}
+.extra-button:hover {
+  background-color: lightgray;
 }
 }
 

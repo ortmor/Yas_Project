@@ -16,10 +16,10 @@ const ThankyouPage = () => {
     <div className="main-thankyou">
  <div className="thankyou-container">
       <img src="/ADNOC YiS Lockup_NEG.png" alt="Logo" className="logo" />
-      <h2>
+      <h1>
         THANK YOU FOR <br />
         PARTICIPATING
-      </h2>
+      </h1>
       {state && state.message && <p>{state.message}</p>}
       <p>
         You can continue again by <br />

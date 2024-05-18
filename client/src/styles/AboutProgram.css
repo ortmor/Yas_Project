@@ -1,36 +1,47 @@
+.about-containermain{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(0,137,150);
 
+}
 .about-container {
   max-width: 600px;
-  margin: 9rem auto;
   padding: 2rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   background-color: rgb(0,137,150);
-  
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'DINCond-Bold'; 
 }
 
 .abtpro-logo{
-  width: 376px !important;
+  width: 376px ;
+  margin-top: 2rem;
   margin-bottom: 20px;
-  margin-left: 99px;
+  margin-left: 3rem;
 
 }
+
 h3 {
   text-align: center;
   color: white;
   font-family: 'DINCond-Bold', sans-serif; 
+  font-size: 2rem;
 
 
 }
-h2{
-  font-family: 'DINCond-Bold', sans-serif; 
+h4{
+  font-family: 'DINCond-Bold'; 
   color: white;
+  font-size: 1.9rem;
+
 }
 p {
+  margin-top: 2rem;
+  line-height: 1.2rem;
   margin-bottom: 20px;
-  font-family: 'DINCond-Bold', sans-serif; 
+  font-family: 'DINCond-Bold';
   text-align: center;
+  font-size: 1.9rem;
   color: white;
 }
 
@@ -60,17 +71,17 @@ p {
 }
 
 .answer-option.correct {
-  background-color: lightgreen;
+  background-color: #92d050;
 }
 
 .answer-option.incorrect {
-  background-color: yellow;
+  background-color: #ffc000;
 }
 
 .next-button {
   margin-top: 20px;
   padding: 12px;
-  background-color:GREY ;
+  background-color:rgb(113, 112, 115) ;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -81,7 +92,7 @@ p {
 }
 
 .next-button:hover {
-  background-color: lightgray;
+  background-color:rgb(113, 112, 115) ;
 }
 
 .alert-message {
@@ -92,7 +103,7 @@ p {
 .submit-button {
   margin-top: 20px;
   padding: 12px;
-  background-color: grey;
+  background-color:rgb(113, 112, 115) ;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -103,47 +114,51 @@ p {
 }
 
 .submit-button:hover {
-  background-color: lightgray;
+  background-color:rgb(113, 112, 115) ;
 }
 
 
 @media screen  and (max-width:600px){
-  
   .about-container {
-    max-width: 100%;
-    margin-top: 4rem;
-    margin-top: 4rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    padding: -3rem;
+    max-width: 600px;
     padding: 2rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     background-color: rgb(0,137,150);
-    
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'DINCond-Bold'; 
   }
+  
   .abtpro-logo{
-    width: 300px !important;
+    width: 376px ;
+    margin-top: 2rem;
     margin-bottom: 20px;
-    margin-left: 2rem;
+    margin-left: 3rem;
   
   }
+  
   h3 {
     text-align: center;
     color: white;
     font-family: 'DINCond-Bold', sans-serif; 
+    font-size: 2rem;
   
   
   }
-  h2{
-    font-family: 'DINCond-Bold', sans-serif; 
+  h4{
+    font-family: 'DINCond-Bold'; 
     color: white;
+    font-size: 1.9rem;
+  
   }
   p {
+    margin-top: 2rem;
+    line-height: 1.2rem;
     margin-bottom: 20px;
-    font-family: 'DINCond-Bold', sans-serif; 
+    font-size: 1.9rem;
+    font-family: 'DINCond-Bold',; 
     text-align: center;
+    font-size: 1.9rem;
+    justify-content: center;
     color: white;
   }
   
@@ -164,8 +179,8 @@ p {
     cursor: pointer;
     transition: background-color 0.3s ease;
     background-color: white;
-    width: 290px;
-    margin-left: 1rem;
+    width: 363px;
+    margin-left: 107px;
   }
   
   .answer-option:hover {
@@ -173,28 +188,28 @@ p {
   }
   
   .answer-option.correct {
-    background-color: lightgreen;
+    background-color: #92d050;
   }
   
   .answer-option.incorrect {
-    background-color: yellow;
+    background-color: #ffc000;
   }
   
   .next-button {
     margin-top: 20px;
     padding: 12px;
-    background-color:GREY ;
+    background-color:rgb(113, 112, 115) ;
     color: #fff;
     border: none;
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
    width: 156px;
-    margin-left: 5rem;
+    margin-left: 222px;
   }
   
   .next-button:hover {
-    background-color: lightgray;
+    background-color:rgb(113, 112, 115) ;
   }
   
   .alert-message {
@@ -205,7 +220,7 @@ p {
   .submit-button {
     margin-top: 20px;
     padding: 12px;
-    background-color: grey;
+    background-color:rgb(113, 112, 115) ;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -216,49 +231,52 @@ p {
   }
   
   .submit-button:hover {
-    background-color: lightgray;
+    background-color:rgb(113, 112, 115) ;
   }
 }
 
 
 
-@media screen  and (max-width:500px){
+@media screen  and (max-width:520px){
   
-   
   .about-container {
-    max-width: 100%;
-    margin-top: 4rem;
-    margin-top: 4rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    padding: 2rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
     background-color: rgb(0,137,150);
-    
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'DINCond-Bold'; 
   }
+  
   .abtpro-logo{
-    width: 280px !important;
+    width: 332px ;
+    margin-top: 2rem;
     margin-bottom: 20px;
-    margin-left: 1rem;
+    margin-left: 3rem;
   
   }
+  
   h3 {
     text-align: center;
     color: white;
     font-family: 'DINCond-Bold', sans-serif; 
+    font-size: 2rem;
   
   
   }
-  h2{
-    font-family: 'DINCond-Bold', sans-serif; 
+  h4{
+    font-family: 'DINCond-Bold'; 
     color: white;
+    font-size: 1.9rem;
+  
   }
   p {
+    margin-top: 2rem;
+    line-height: 1.2rem;
     margin-bottom: 20px;
-    font-family: 'DINCond-Bold', sans-serif; 
+    font-family: 'DINCond-Bold',; 
     text-align: center;
+    font-size: 1.9rem;
+    justify-content: center;
     color: white;
   }
   
@@ -279,35 +297,33 @@ p {
     cursor: pointer;
     transition: background-color 0.3s ease;
     background-color: white;
-    width: 260px;
-    margin-left: 0rem;
-  }
+    width: 306px;
+    margin-left: 63px;
+}
   
   .answer-option:hover {
     background-color: #e0e0e0;
   }
   
   .answer-option.correct {
-    background-color: lightgreen;
+    background-color: #92d050;
   }
   
   .answer-option.incorrect {
-    background-color: yellow;
+    background-color: #ffc000;
   }
-  
   .next-button {
     margin-top: 20px;
     padding: 12px;
-    background-color:GREY ;
+    background-color: rgb(113, 112, 115);
     color: #fff;
     border: none;
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
-   width: 156px;
-    margin-left: 3rem;
-  }
-  
+    width: 155px;
+    margin-left: 159px;
+}
   .next-button:hover {
     background-color: lightgray;
   }
@@ -320,7 +336,7 @@ p {
   .submit-button {
     margin-top: 20px;
     padding: 12px;
-    background-color: grey;
+    background-color:rgb(113, 112, 115) ;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -331,24 +347,21 @@ p {
   }
   
   .submit-button:hover {
-    background-color: lightgray;
+    background-color:rgb(113, 112, 115) ;
   }
 }
 
 
 @media screen  and (max-width:450px){
-  
+ 
    
   .about-container {
     max-width: 100%;
-    margin-top: 7rem;
     margin-bottom: 3rem;
     margin-left: 3rem;
     margin-right: 3rem;
     padding: 2rem;
-    border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     background-color: rgb(0,137,150);
     
   }
@@ -361,21 +374,22 @@ p {
   h3 {
     text-align: center;
     color: white;
-    font-family: 'DINCond-Bold', sans-serif; 
+    font-family: 'DINCond-Bold'; 
   
   
   }
   h2{
-    font-family: 'DINCond-Bold', sans-serif; 
+    font-family: 'DINCond-Bold'; 
     color: white;
   }
   p {
     margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 200;
     font-family: 'DINCond-Bold', sans-serif; 
     text-align: center;
     color: white;
   }
-  
   .options-container {
     display: flex;
     flex-direction: column;
@@ -394,7 +408,7 @@ p {
     transition: background-color 0.3s ease;
     background-color: white;
     width: 250px;
-    margin-left: 0rem;
+    margin-left: 1rem;
   }
   
   .answer-option:hover {
@@ -402,28 +416,27 @@ p {
   }
   
   .answer-option.correct {
-    background-color: lightgreen;
+    background-color: #92d050;
   }
   
   .answer-option.incorrect {
-    background-color: yellow;
+    background-color: #ffc000;
   }
-  
   .next-button {
     margin-top: 20px;
     padding: 12px;
-    background-color:GREY ;
+    background-color:rgb(113, 112, 115) ;
     color: #fff;
     border: none;
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
    width: 156px;
-    margin-left: 3rem;
+    margin-left: 4rem;
   }
   
   .next-button:hover {
-    background-color: lightgray;
+    background-color:rgb(113, 112, 115) ;
   }
   
   .alert-message {
@@ -434,7 +447,7 @@ p {
   .submit-button {
     margin-top: 20px;
     padding: 12px;
-    background-color: grey;
+    background-color:rgb(113, 112, 115) ;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -445,23 +458,19 @@ p {
   }
   
   .submit-button:hover {
-    background-color: lightgray;
+    background-color:rgb(113, 112, 115) ;
   }
 }
 
 @media screen  and (max-width:400px){
-  
-   
+ 
   .about-container {
     max-width: 100%;
-    margin-top: 5rem !important;
     margin-bottom: 3rem;
     margin-left: 3rem;
     margin-right: 3rem;
     padding: 2rem;
-    border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     background-color: rgb(0,137,150);
     
   }
@@ -484,6 +493,8 @@ p {
   }
   p {
     margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 200;
     font-family: 'DINCond-Bold', sans-serif; 
     text-align: center;
     color: white;
@@ -507,7 +518,7 @@ p {
     transition: background-color 0.3s ease;
     background-color: white;
     width: 190px;
-    margin-left: 0rem;
+    margin-left: 1rem;
   }
   
   .answer-option:hover {
@@ -515,17 +526,17 @@ p {
   }
   
   .answer-option.correct {
-    background-color: lightgreen;
+    background-color: #92d050;
   }
   
   .answer-option.incorrect {
-    background-color: yellow;
+    background-color: #ffc000;
   }
   
   .next-button {
     margin-top: 20px;
     padding: 12px;
-    background-color:GREY ;
+    background-color:rgb(113, 112, 115) ;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -536,7 +547,7 @@ p {
   }
   
   .next-button:hover {
-    background-color: lightgray;
+    background-color:rgb(113, 112, 115) ;
   }
   
   .alert-message {
@@ -547,7 +558,7 @@ p {
   .submit-button {
     margin-top: 20px;
     padding: 12px;
-    background-color: grey;
+    background-color:rgb(113, 112, 115) ;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -558,7 +569,7 @@ p {
   }
   
   .submit-button:hover {
-    background-color: lightgray;
+    background-color:rgb(113, 112, 115) ;
   }
 }
 
@@ -567,14 +578,11 @@ p {
    
   .about-container {
     max-width: 100%;
-    margin-top: 4.5rem !important;
     margin-bottom: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
     padding: 2rem;
-    border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     background-color: rgb(0,137,150);
     
   }
@@ -591,12 +599,17 @@ p {
   
   
   }
-  h2{
-    font-family: 'DINCond-Bold', sans-serif; 
+  h4 {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-family: monospace;
     color: white;
-  }
+}
   p {
     margin-bottom: 20px;
+    font-size: 0.9rem;
+    font-weight: 200;
     font-family: 'DINCond-Bold', sans-serif; 
     text-align: center;
     color: white;
@@ -620,7 +633,7 @@ p {
     transition: background-color 0.3s ease;
     background-color: white;
     width: 200px;
-    margin-left: 0rem;
+    margin-left: 1rem;
   }
   
   .answer-option:hover {
@@ -628,17 +641,16 @@ p {
   }
   
   .answer-option.correct {
-    background-color: lightgreen;
+    background-color: #92d050;
   }
   
   .answer-option.incorrect {
-    background-color: yellow;
+    background-color: #ffc000;
   }
-  
   .next-button {
     margin-top: 20px;
     padding: 12px;
-    background-color:GREY ;
+    background-color:rgb(113, 112, 115) ;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -649,7 +661,7 @@ p {
   }
   
   .next-button:hover {
-    background-color: lightgray;
+    background-color:rgb(113, 112, 115) ;
   }
   
   .alert-message {
@@ -660,7 +672,7 @@ p {
   .submit-button {
     margin-top: 20px;
     padding: 12px;
-    background-color: grey;
+    background-color:rgb(113, 112, 115) ;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -671,7 +683,7 @@ p {
   }
   
   .submit-button:hover {
-    background-color: lightgray;
+    background-color:rgb(113, 112, 115) ;
   }
 }
 
@@ -681,14 +693,11 @@ p {
    
   .about-container {
     max-width: 100%;
-    margin-top: 4.5rem !important;
     margin-bottom: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
     padding: 2rem;
-    border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     background-color: rgb(0,137,150);
     
   }
@@ -711,6 +720,8 @@ p {
   }
   p {
     margin-bottom: 20px;
+    font-size: 0.9rem;
+    font-weight: 200;
     font-family: 'DINCond-Bold', sans-serif; 
     text-align: center;
     color: white;
@@ -734,6 +745,7 @@ p {
     transition: background-color 0.3s ease;
     background-color: white;
     width: 170px;
+    margin-left: 1rem;
   }
   
   .answer-option:hover {
@@ -741,17 +753,18 @@ p {
   }
   
   .answer-option.correct {
-    background-color: lightgreen;
+    background-color: #92d050;
   }
   
   .answer-option.incorrect {
-    background-color: yellow;
+    background-color: #ffc000;
   }
   
   .next-button {
     margin-top: 20px;
+    
     padding: 12px;
-    background-color:GREY ;
+    background-color:rgb(113, 112, 115) ;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -762,7 +775,7 @@ p {
   }
   
   .next-button:hover {
-    background-color: lightgray;
+    background-color:rgb(113, 112, 115) ;
   }
   
   .alert-message {
@@ -773,7 +786,7 @@ p {
   .submit-button {
     margin-top: 20px;
     padding: 12px;
-    background-color: grey;
+    background-color:rgb(113, 112, 115) ;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -784,6 +797,6 @@ p {
   }
   
   .submit-button:hover {
-    background-color: lightgray;
+    background-color:rgb(113, 112, 115) ;
   }
 }

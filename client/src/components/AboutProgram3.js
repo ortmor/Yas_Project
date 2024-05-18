@@ -131,10 +131,11 @@ const AboutProgram3 = () => {
   const currentQuestion = questions[currentQuestionIndex];
 
   return (
+    <div className="about-containermain3">
     <div className="about-containerthree">
       <img src="/4x4iS - Lockup_NEG.png" alt="Logo" className="abtpro-logo" />
-      <h2>TRIVIA TIME</h2>
-      <h3>Question {currentQuestionIndex + 1}/{questions.length}</h3>
+      <h3>TRIVIA TIME</h3>
+      <h4>Question {currentQuestionIndex + 1}/{questions.length}</h4>
       <p>{currentQuestion.questionthree}</p>
       <div className="options-container">
         {currentQuestion.options.map((option, index) => {
@@ -152,7 +153,7 @@ const AboutProgram3 = () => {
           return (
             <div
               key={index}
-              className={`answer-option ${
+              className={`answer-option3 ${
                 isOptionSelected ? "selected" : ""
               } ${optionClass}`}
               onClick={() => handleAnswerSelect(index)}
@@ -166,7 +167,7 @@ const AboutProgram3 = () => {
         <div className="alert-message">Please select an answer!</div>
       )}
       <button
-        className="next-button"
+        className="next-button3"
         onClick={handleNextQuestion}
         style={{
           display:
@@ -176,9 +177,10 @@ const AboutProgram3 = () => {
         Next Question
       </button>
       {currentQuestionIndex === questions.length - 1 && (
-        <button onClick={handleFinishProgram}>Finish Program</button>
+        <button className="next-button3" onClick={handleFinishProgram}>Finish Program</button>
       )}
       <ToastContainer />
+    </div>
     </div>
   );
 };

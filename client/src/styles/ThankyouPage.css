@@ -20,9 +20,10 @@
     margin-bottom: 20px;
   }
   
-  h2 {
+  h1 {
     color: white;
-  }
+    line-height: 2.9rem;
+}
   
   p {
     margin-bottom: 20px;

@@ -7,7 +7,7 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../styles/AboutProgram.css";
 
-const   AboutProgram = () => {
+const AboutProgram = () => {
   const { user } = useSelector((state) => state);
   const navigate = useNavigate();
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -113,7 +113,7 @@ const   AboutProgram = () => {
       correctlyAnswered,
       wronglyAnswered,
     };
-    console.log(resultData,"resultData");
+    console.log(resultData, "resultData");
     axios
       .post("/result", resultData)
       .then((response) => {
@@ -130,19 +130,19 @@ const   AboutProgram = () => {
   }
 
   const currentQuestion = questions[currentQuestionIndex];
- 
+
   return (
     <div className="about-containermain">
-<div className="about-container">
+      <div className="about-container">
         <img
           src="/Ethara - Lockup_ADNOC_NEG.png"
           alt="Logo"
           className="abtpro-logo"
         />
-        <h2>TRIVIA TIME</h2>
-        <h3>
+        <h3>TRIVIA TIME</h3>
+        <h4>
           Question {currentQuestionIndex + 1}/{questions.length}
-        </h3>
+        </h4>
         <p>{currentQuestion.question}</p>
         <div className="options-container">
           {currentQuestion.options.map((option, index) => {
@@ -181,15 +181,14 @@ const   AboutProgram = () => {
               currentQuestionIndex === questions.length - 1 ? "none" : "block",
           }}
         >
-          Next Question
+          NEXT QUESTION
         </button>
         {currentQuestionIndex === questions.length - 1 && (
-          <button onClick={handleFinishProgram}>Finish Program</button>
+          <button  className="submit-button" onClick={handleFinishProgram}>SUBMIT</button>
         )}
         <ToastContainer />
       </div>
     </div>
-      
   );
 };
 

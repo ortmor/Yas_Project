@@ -5,6 +5,6 @@
 }
   body { 
     background-color: #fff; /* White background color for the entire page */
-    font-family: 'DINCond-Bold', sans-serif; /* Use DINCond-Bold font for the entire page */ 
+    font-family: 'DINCond-Bold'; /* Use DINCond-Bold font for the entire page */ 
 }
 
