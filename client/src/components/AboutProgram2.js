@@ -96,7 +96,7 @@ const AboutProgram = () => {
       setShowAlert(true);
     }
   };
-  const code=user.details.uniqueCode;
+  const code=user?.details?.uniqueCode;
 
   const handleFinishProgram = () => {
     handleResult();

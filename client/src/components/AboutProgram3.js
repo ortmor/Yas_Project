@@ -98,7 +98,7 @@ const AboutProgram3 = () => {
   const handleFinishProgram = () => {
     handleResult();
   };
-  const code=user.details.uniqueCode;
+  const code=user?.details?.uniqueCode;
 
   const handleResult = () => {
     const resultData = {
@@ -174,10 +174,10 @@ const AboutProgram3 = () => {
             currentQuestionIndex === questions.length - 1 ? "none" : "block",
         }}
       >
-        Next Question
+        NEXT QUESTION
       </button>
       {currentQuestionIndex === questions.length - 1 && (
-        <button className="next-button3" onClick={handleFinishProgram}>Finish Program</button>
+        <button className="next-button3" onClick={handleFinishProgram}>SUBMIT</button>
       )}
       <ToastContainer />
     </div>

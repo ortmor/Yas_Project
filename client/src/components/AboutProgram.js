@@ -19,7 +19,7 @@ const AboutProgram = () => {
   const [firstAttemptCorrect, setFirstAttemptCorrect] = useState(true);
   const [correctlyAnswered, setCorrectlyAnswered] = useState([]);
   const [wronglyAnswered, setWronglyAnswered] = useState([]);
-  const code = user.details.uniqueCode;
+  const code = user?.details?.uniqueCode;
 
   const getQuestions = () => {
     axios
@@ -132,7 +132,7 @@ const AboutProgram = () => {
   const currentQuestion = questions[currentQuestionIndex];
 
   return (
-    <div className="about-containermain">
+    <div className="about-containermainone">
       <div className="about-container">
         <img
           src="/Ethara - Lockup_ADNOC_NEG.png"

@@ -99,7 +99,7 @@ const AboutProgram4 = () => {
   const handleFinishProgram = () => {
     handleResult();
   };
-  const code=user.details.uniqueCode;
+  const code=user?.details?.uniqueCode;
 
   const handleResult = () => {
     const resultData = {
