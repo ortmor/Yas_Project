@@ -47,6 +47,10 @@ const AboutProgram4 = () => {
     const correctAnswerIndex = answer[currentQuestionIndex];
     const isCorrect = optionIndex === correctAnswerIndex;
 
+    const incorrectOptions = questions[currentQuestionIndex].options
+      .map((_, index) => index)
+      .filter((index) => index !== correctAnswerIndex);
+
     if (isCorrect) {
       if (!correctlyAnswered[currentQuestionIndex]) {
         setCorrectCount((prevCount) => prevCount + 1);
@@ -59,19 +63,14 @@ const AboutProgram4 = () => {
       setSelectedAnswer({
         correct: correctAnswerIndex,
         selected: optionIndex,
-        incorrect: [],
+        incorrect: incorrectOptions,
       });
-      // Reset wronglyAnswered for the current question
       setWronglyAnswered((prev) => {
         const newArr = [...prev];
         newArr[currentQuestionIndex] = false; // Change null to false
         return newArr;
       });
-    }
-     else {
-      const incorrectOptions = questions[currentQuestionIndex].options
-        .map((_, index) => index)
-        .filter((index) => index !== correctAnswerIndex);
+    } else {
       setSelectedAnswer({
         correct: correctAnswerIndex,
         selected: optionIndex,
@@ -99,6 +98,7 @@ const AboutProgram4 = () => {
   const handleFinishProgram = () => {
     handleResult();
   };
+
   const code=user?.details?.uniqueCode;
 
   const handleResult = () => {
@@ -133,58 +133,57 @@ const AboutProgram4 = () => {
 
   return (
     <div className="about-containermain4">
-    <div className="about-containerfour">
-      <img src="/ADNOC YiS Lockup_NEG.png" alt="Logo" className="abtpro4-logo" />
-      <h3>TRIVIA TIME</h3>
-      <h4>Question {currentQuestionIndex + 1}/{questions.length}</h4>
-      <p>{currentQuestion.questionfour}</p>
-      <div className="options-container">
-        {currentQuestion.options.map((option, index) => {
-          const isOptionSelected = selectedAnswer.selected === index;
-          const isCorrect = selectedAnswer.correct === index;
-          const isIncorrect =
-            selectedAnswer.incorrect &&
-            selectedAnswer.incorrect.includes(index);
-          const optionClass = isCorrect
-            ? "correct"
-            : isIncorrect
-            ? "incorrect"
-            : "";
+      <div className="about-containerfour">
+        <img src="/ADNOC YiS Lockup_NEG.png" alt="Logo" className="abtpro4-logo" />
+        <h3>TRIVIA TIME</h3>
+        <h4>Question {currentQuestionIndex + 1}/{questions.length}</h4>
+        <p>{currentQuestion.questionfour}</p>
+        <div className="options-container">
+          {currentQuestion.options.map((option, index) => {
+            const isOptionSelected = selectedAnswer.selected === index;
+            const isCorrect = selectedAnswer.correct === index;
+            const isIncorrect =
+              selectedAnswer.incorrect &&
+              selectedAnswer.incorrect.includes(index);
+            const optionClass = isCorrect
+              ? "correct"
+              : isIncorrect
+              ? "incorrect"
+              : "";
 
-          return (
-            <div
-              key={index}
-              className={`answer-option ${
-                isOptionSelected ? "selected" : ""
-              } ${optionClass}`}
-              onClick={() => handleAnswerSelect(index)}
-            >
-              {option}
-            </div>
-          );
-        })}
+            return (
+              <div
+                key={index}
+                className={`answer-option ${
+                  isOptionSelected ? "selected" : ""
+                } ${optionClass}`}
+                onClick={() => handleAnswerSelect(index)}
+              >
+                {option}
+              </div>
+            );
+          })}
+        </div>
+        {showAlert && (
+          <div className="alert-message">Please select an answer!</div>
+        )}
+        <button
+          className="next-button4"
+          onClick={handleNextQuestion}
+          style={{
+            display:
+              currentQuestionIndex === questions.length - 1 ? "none" : "block",
+          }}
+        >
+          NEXT QUESTION
+        </button>
+        {currentQuestionIndex === questions.length - 1 && (
+          <button  className="next-button4" onClick={handleFinishProgram}>SUBMIT</button>
+        )}
+        <ToastContainer />
       </div>
-      {showAlert && (
-        <div className="alert-message">Please select an answer!</div>
-      )}
-      <button
-        className="next-button4"
-        onClick={handleNextQuestion}
-        style={{
-          display:
-            currentQuestionIndex === questions.length - 1 ? "none" : "block",
-        }}
-      >
-       NEXT QUESTION
-      </button>
-      {currentQuestionIndex === questions.length - 1 && (
-        <button  className="next-button4" onClick={handleFinishProgram}>SUBMIT</button>
-      )}
-      <ToastContainer />
-    </div>
     </div>
   );
 };
-
 
 export default AboutProgram4;

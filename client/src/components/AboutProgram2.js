@@ -1,5 +1,4 @@
 /* eslint-disable */
-
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -48,6 +47,10 @@ const AboutProgram = () => {
     const correctAnswerIndex = answer[currentQuestionIndex];
     const isCorrect = optionIndex === correctAnswerIndex;
 
+    const incorrectOptions = questions[currentQuestionIndex].options
+      .map((_, index) => index)
+      .filter((index) => index !== correctAnswerIndex);
+
     if (isCorrect) {
       if (!correctlyAnswered[currentQuestionIndex]) {
         setCorrectCount((prevCount) => prevCount + 1);
@@ -60,19 +63,9 @@ const AboutProgram = () => {
       setSelectedAnswer({
         correct: correctAnswerIndex,
         selected: optionIndex,
-        incorrect: [],
+        incorrect: incorrectOptions,
       });
-      // Reset wronglyAnswered for the current question
-      setWronglyAnswered((prev) => {
-        const newArr = [...prev];
-        newArr[currentQuestionIndex] = false; // Change null to false
-        return newArr;
-      });
-    }
-     else {
-      const incorrectOptions = questions[currentQuestionIndex].options
-        .map((_, index) => index)
-        .filter((index) => index !== correctAnswerIndex);
+    } else {
       setSelectedAnswer({
         correct: correctAnswerIndex,
         selected: optionIndex,
@@ -96,7 +89,7 @@ const AboutProgram = () => {
       setShowAlert(true);
     }
   };
-  const code=user?.details?.uniqueCode;
+  const code = user?.details?.uniqueCode;
 
   const handleFinishProgram = () => {
     handleResult();
@@ -105,9 +98,9 @@ const AboutProgram = () => {
   const handleResult = () => {
     const resultData = {
       userId: user.details._id,
-      code:code,
+      code: code,
       name: user.details.name,
-      email:user.details.email,
+      email: user.details.email,
       correctAnswers: correctCount,
       totalQuestions: questions.length,
       firstAttemptCorrect: firstAttemptCorrect, 
@@ -134,55 +127,55 @@ const AboutProgram = () => {
 
   return (
     <div className="about-containermain2">
-    <div className="about-containertwo">
-      <img src="/F1_RM_InSchools_Localised_UAE_Lockup01_Stk_White_Standard.png" alt="Logo" className="abtpro-logo" />
-      <h3>TRIVIA TIME</h3>
-      <h4>Question {currentQuestionIndex + 1}/{questions.length}</h4>
-      <p>{currentQuestion.questiontwo}</p>
-      <div className="options-container">
-        {currentQuestion.options.map((option, index) => {
-          const isOptionSelected = selectedAnswer.selected === index;
-          const isCorrect = selectedAnswer.correct === index;
-          const isIncorrect =
-            selectedAnswer.incorrect &&
-            selectedAnswer.incorrect.includes(index);
-          const optionClass = isCorrect
-            ? "correct"
-            : isIncorrect
-            ? "incorrect"
-            : "";
+      <div className="about-containertwo">
+        <img src="/F1_RM_InSchools_Localised_UAE_Lockup01_Stk_White_Standard.png" alt="Logo" className="abtpro-logo" />
+        <h3>TRIVIA TIME</h3>
+        <h4>Question {currentQuestionIndex + 1}/{questions.length}</h4>
+        <p>{currentQuestion.questiontwo}</p>
+        <div className="options-container">
+          {currentQuestion.options.map((option, index) => {
+            const isOptionSelected = selectedAnswer.selected === index;
+            const isCorrect = selectedAnswer.correct === index;
+            const isIncorrect =
+              selectedAnswer.incorrect &&
+              selectedAnswer.incorrect.includes(index);
+            const optionClass = isCorrect
+              ? "correct"
+              : isIncorrect
+              ? "incorrect"
+              : "";
 
-          return (
-            <div
-              key={index}
-              className={`answer-option ${
-                isOptionSelected ? "selected" : ""
-              } ${optionClass}`}
-              onClick={() => handleAnswerSelect(index)}
-            >
-              {option}
-            </div>
-          );
-        })}
+            return (
+              <div
+                key={index}
+                className={`answer-option ${
+                  isOptionSelected ? "selected" : ""
+                } ${optionClass}`}
+                onClick={() => handleAnswerSelect(index)}
+              >
+                {option}
+              </div>
+            );
+          })}
+        </div>
+        {showAlert && (
+          <div className="alert-message">Please select an answer!</div>
+        )}
+        <button
+          className="next-button"
+          onClick={handleNextQuestion}
+          style={{
+            display:
+              currentQuestionIndex === questions.length - 1 ? "none" : "block",
+          }}
+        >
+          NEXT QUESTION
+        </button>
+        {currentQuestionIndex === questions.length - 1 && (
+          <button className="next-button" onClick={handleFinishProgram}>SUBMIT</button>
+        )}
+        <ToastContainer />
       </div>
-      {showAlert && (
-        <div className="alert-message">Please select an answer!</div>
-      )}
-      <button
-        className="next-button"
-        onClick={handleNextQuestion}
-        style={{
-          display:
-            currentQuestionIndex === questions.length - 1 ? "none" : "block",
-        }}
-      >
-        NEXT QUESTION
-      </button>
-      {currentQuestionIndex === questions.length - 1 && (
-        <button className="next-button" onClick={handleFinishProgram}>SUBMIT</button>
-      )}
-      <ToastContainer />
-    </div>
     </div>
   );
 };

@@ -77,7 +77,15 @@
   .answer-option.incorrect {
     background-color: #ffc000;
   }
+  .correct {
+    background-color: #92d050;
+    
+  }
   
+  .incorrect {
+    background-color: #ffc000;
+    
+  }
   .next-button {
     margin-top: 20px;
     padding: 12px;
@@ -194,7 +202,15 @@
     .answer-option.incorrect {
       background-color: #ffc000;
     }
+    .correct {
+      background-color: #92d050;
+      
+    }
     
+    .incorrect {
+      background-color: #ffc000;
+      
+    }
     .next-button {
       margin-top: 20px;
       padding: 12px;
@@ -312,6 +328,15 @@
     .answer-option.incorrect {
       background-color: #ffc000;
     }
+    .correct {
+      background-color: #92d050;
+      
+    }
+    
+    .incorrect {
+      background-color: #ffc000;
+      
+    }
     .next-button {
       margin-top: 20px;
     padding: 12px;
@@ -385,7 +410,7 @@
     }
     p {
       margin-bottom: 20px;
-    font-size: 1rem;
+    font-size: 1.9rem;
     font-weight: 200;
     width: 100%;
     font-family: 'DINCond-Bold'; 
@@ -424,6 +449,15 @@
     
     .answer-option.incorrect {
       background-color: #ffc000;
+    }
+    .correct {
+      background-color: #92d050;
+      
+    }
+    
+    .incorrect {
+      background-color: #ffc000;
+      
     }
     .next-button {
       margin-top: 20px;
@@ -498,7 +532,7 @@
     p {
       width: 100%;
       margin-bottom: 20px;
-    font-size: 1.2rem;
+    font-size: 1.9rem;
     font-weight: 200;
     font-family: 'DINCond-Bold', sans-serif; 
     text-align: center;
@@ -536,6 +570,15 @@
     
     .answer-option.incorrect {
       background-color: #ffc000;
+    }
+    .correct {
+      background-color: #92d050;
+      
+    }
+    
+    .incorrect {
+      background-color: #ffc000;
+      
     }
     .next-button {
       margin-top: 20px;
@@ -613,7 +656,7 @@
     p {
       width: 100%;
       margin-bottom: 20px;
-    font-size: 0.9rem;
+    font-size: 1.9rem;
     font-weight: 200;
     font-family: 'DINCond-Bold', sans-serif; 
     text-align: center;
@@ -652,7 +695,15 @@
     .answer-option.incorrect {
       background-color: #ffc000;
     }
+    .correct {
+      background-color: #92d050;
+      
+    }
     
+    .incorrect {
+      background-color: #ffc000;
+      
+    }
     .next-button {
       margin-top: 20px;
       padding: 12px;
@@ -726,7 +777,7 @@
     }
     p {
       margin-bottom: 20px;
-      font-size: 0.9rem;
+      font-size: 1.9rem;
       font-weight: 200;
       font-family: 'DINCond-Bold', sans-serif; 
       text-align: center;
@@ -764,7 +815,15 @@
     .answer-option.incorrect {
       background-color: #ffc000;
     }
+    .correct {
+      background-color: #92d050;
+      
+    }
     
+    .incorrect {
+      background-color: #ffc000;
+      
+    }
     .next-button {
       margin-top: 20px;
     

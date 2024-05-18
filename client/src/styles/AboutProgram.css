@@ -37,7 +37,7 @@ h4{
 }
 p {
   margin-top: 2rem;
-  line-height: 1.2rem;
+  line-height: 1.9rem;
   margin-bottom: 20px;
   font-family: 'DINCond-Bold';
   text-align: center;
@@ -69,7 +69,19 @@ p {
 .answer-optionone:hover {
   background-color: #e0e0e0;
 }
+.correct {
+  background-color: #92d050;
+  
+}
 
+.incorrect {
+  background-color: #ffc000;
+  
+}
+
+/* .selected {
+  border: 2px solid blue;
+} */
 .answer-optionone.correct {
   background-color: #92d050;
 }
@@ -152,13 +164,11 @@ p {
   }
   p {
     margin-top: 2rem;
-    line-height: 1.2rem;
+    line-height: 1.9rem;
     margin-bottom: 20px;
-    font-size: 1.9rem;
-    font-family: 'DINCond-Bold',; 
+    font-family: 'DINCond-Bold';
     text-align: center;
     font-size: 1.9rem;
-    justify-content: center;
     color: white;
   }
   
@@ -194,7 +204,15 @@ p {
   .answer-optionone.incorrect {
     background-color: #ffc000;
   }
+  .correct {
+    background-color: #92d050;
+    
+  }
   
+  .incorrect {
+    background-color: #ffc000;
+    
+  }
   .next-buttonone {
     margin-top: 20px;
     padding: 12px;
@@ -271,12 +289,11 @@ p {
   }
   p {
     margin-top: 2rem;
-    line-height: 1.2rem;
+    line-height: 1.9rem;
     margin-bottom: 20px;
-    font-family: 'DINCond-Bold',; 
+    font-family: 'DINCond-Bold';
     text-align: center;
     font-size: 1.9rem;
-    justify-content: center;
     color: white;
   }
   
@@ -311,6 +328,15 @@ p {
   
   .answer-optionone.incorrect {
     background-color: #ffc000;
+  }
+  .correct {
+    background-color: #92d050;
+    
+  }
+  
+  .incorrect {
+    background-color: #ffc000;
+    
   }
   .next-buttonone {
     margin-top: 20px;
@@ -383,11 +409,12 @@ p {
     color: white;
   }
   p {
+    margin-top: 2rem;
+    line-height: 1.9rem;
     margin-bottom: 20px;
-    font-size: 1.2rem;
-    font-weight: 200;
-    font-family: 'DINCond-Bold', sans-serif; 
+    font-family: 'DINCond-Bold';
     text-align: center;
+    font-size: 1.9rem;
     color: white;
   }
   .options-container {
@@ -421,6 +448,15 @@ p {
   
   .answer-optionone.incorrect {
     background-color: #ffc000;
+  }
+  .correct {
+    background-color: #92d050;
+    
+  }
+  
+  .incorrect {
+    background-color: #ffc000;
+    
   }
   .next-buttonone {
     margin-top: 20px;
@@ -492,14 +528,14 @@ p {
     color: white;
   }
   p {
+    margin-top: 2rem;
+    line-height: 1.9rem;
     margin-bottom: 20px;
-    font-size: 1.2rem;
-    font-weight: 200;
-    font-family: 'DINCond-Bold', sans-serif; 
+    font-family: 'DINCond-Bold';
     text-align: center;
+    font-size: 1.9rem;
     color: white;
   }
-  
   .options-container {
     display: flex;
     flex-direction: column;
@@ -532,7 +568,15 @@ p {
   .answer-optionone.incorrect {
     background-color: #ffc000;
   }
+  .correct {
+    background-color: #92d050;
+    
+  }
   
+  .incorrect {
+    background-color: #ffc000;
+    
+  }
   .next-buttonone {
     margin-top: 20px;
     padding: 12px;
@@ -606,14 +650,15 @@ p {
     font-family: monospace;
     color: white;
 }
-  p {
-    margin-bottom: 20px;
-    font-size: 0.9rem;
-    font-weight: 200;
-    font-family: 'DINCond-Bold', sans-serif; 
-    text-align: center;
-    color: white;
-  }
+p {
+  margin-top: 2rem;
+  line-height: 1.9rem;
+  margin-bottom: 20px;
+  font-family: 'DINCond-Bold';
+  text-align: center;
+  font-size: 1.9rem;
+  color: white;
+}
   
   .options-container {
     display: flex;
@@ -646,6 +691,15 @@ p {
   
   .answer-optionone.incorrect {
     background-color: #ffc000;
+  }
+  .correct {
+    background-color: #92d050;
+    
+  }
+  
+  .incorrect {
+    background-color: #ffc000;
+    
   }
   .next-buttonone {
     margin-top: 20px;
@@ -719,11 +773,12 @@ p {
     color: white;
   }
   p {
+    margin-top: 2rem;
+    line-height: 1.9rem;
     margin-bottom: 20px;
-    font-size: 0.9rem;
-    font-weight: 200;
-    font-family: 'DINCond-Bold', sans-serif; 
+    font-family: 'DINCond-Bold';
     text-align: center;
+    font-size: 1.9rem;
     color: white;
   }
   
@@ -759,7 +814,15 @@ p {
   .answer-optionone.incorrect {
     background-color: #ffc000;
   }
+  .correct {
+    background-color: #92d050;
+    
+  }
   
+  .incorrect {
+    background-color: #ffc000;
+    
+  }
   .next-buttonone {
     margin-top: 20px;
     

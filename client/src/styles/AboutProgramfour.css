@@ -75,7 +75,15 @@
   .answer-option4.incorrect {
     background-color: #ffc000;
   }
+  .correct {
+    background-color: #92d050;
+    
+  }
   
+  .incorrect {
+    background-color: #ffc000;
+    
+  }
   .next-button4 {
     margin-top: 20px;
     padding: 12px;
@@ -150,7 +158,7 @@
     }
     p {
       margin-top: 2rem;
-      line-height: 1.2rem;
+      line-height: 1.9rem;
       margin-bottom: 20px;
       font-size: 1.9rem;
       font-family: 'DINCond-Bold',; 
@@ -192,7 +200,15 @@
     .answer-option4.incorrect {
       background-color: #ffc000;
     }
+    .correct {
+      background-color: #92d050;
+      
+    }
     
+    .incorrect {
+      background-color: #ffc000;
+      
+    }
     .next-button4 {
       margin-top: 20px;
       padding: 12px;
@@ -269,7 +285,7 @@
     }
     p {
       margin-top: 2rem;
-      line-height: 1.2rem;
+      line-height: 1.9rem;
       margin-bottom: 20px;
       font-family: 'DINCond-Bold',; 
       text-align: center;
@@ -310,7 +326,15 @@
     .answer-option4.incorrect {
       background-color: #ffc000;
     }
+    .correct {
+      background-color: #92d050;
+      
+    }
     
+    .incorrect {
+      background-color: #ffc000;
+      
+    }
     .next-button4 {
       margin-top: 20px;
       padding: 12px;
@@ -393,7 +417,7 @@
     }
     p {
       margin-bottom: 20px;
-      font-size: 1rem;
+      font-size: 1.9rem;
       width: 100%;
       font-weight: 200;
       font-family: 'DINCond-Bold', sans-serif; 
@@ -433,7 +457,15 @@
     .answer-option4.incorrect {
       background-color: #ffc000;
     }
+    .correct {
+      background-color: #92d050;
+      
+    }
     
+    .incorrect {
+      background-color: #ffc000;
+      
+    }
     
     .next-button4 {
       margin-top: 20px;
@@ -507,7 +539,7 @@
     }
     p {
       margin-bottom: 20px;
-      font-size: 1rem;
+      font-size: 1.9rem;
       width: 100%;
       font-weight: 200;
       font-family: 'DINCond-Bold', sans-serif; 
@@ -547,7 +579,15 @@
     .answer-option4.incorrect {
       background-color: #ffc000;
     }
+    .correct {
+      background-color: #92d050;
+      
+    }
     
+    .incorrect {
+      background-color: #ffc000;
+      
+    }
     .next-button4 {
       margin-top: 20px;
       padding: 12px;
@@ -623,7 +663,7 @@
   }
     p {
       margin-bottom: 20px;
-      font-size: 0.9rem;
+      font-size: 1.9rem;
       font-weight: 200;
       font-family: 'DINCond-Bold', sans-serif; 
       text-align: center;
@@ -661,6 +701,15 @@
     
     .answer-option4.incorrect {
       background-color: #ffc000;
+    }
+    .correct {
+      background-color: #92d050;
+      
+    }
+    
+    .incorrect {
+      background-color: #ffc000;
+      
     }
     .next-button4 {
       margin-top: 20px;
@@ -735,7 +784,7 @@
     }
     p {
       margin-bottom: 20px;
-      font-size: 0.9rem;
+      font-size: 1.9rem;
       font-weight: 200;
       font-family: 'DINCond-Bold', sans-serif; 
       text-align: center;
@@ -773,7 +822,15 @@
     .answer-option4.incorrect {
       background-color: #ffc000;
     }
+    .correct {
+      background-color: #92d050;
+      
+    }
     
+    .incorrect {
+      background-color: #ffc000;
+      
+    }
     
     .next-button4 {
       margin-top: 20px;
