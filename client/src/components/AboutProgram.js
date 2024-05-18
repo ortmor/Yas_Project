@@ -133,7 +133,7 @@ const AboutProgram = () => {
 
   return (
     <div className="about-containermainone">
-      <div className="about-container">
+      <div className="about-containerone">
         <img
           src="/Ethara - Lockup_ADNOC_NEG.png"
           alt="Logo"
@@ -184,7 +184,7 @@ const AboutProgram = () => {
           NEXT QUESTION
         </button>
         {currentQuestionIndex === questions.length - 1 && (
-          <button  className="submit-button" onClick={handleFinishProgram}>SUBMIT</button>
+          <button className="next-button" onClick={handleFinishProgram}>SUBMIT</button>
         )}
         <ToastContainer />
       </div>
