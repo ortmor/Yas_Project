@@ -73,7 +73,8 @@ const LoginPage = () => {
         </div>
         <div className="button_reqcontainer">
           <button type="button" className="reg-button" onClick={handleLogin}>
-            LOG IN
+           <h5>LOG IN
+            </h5> 
           </button>
         </div>
         </form>

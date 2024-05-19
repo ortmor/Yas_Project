@@ -171,7 +171,8 @@ const AboutProgram = () => {
             })}
           </div>
           {showAlert && (
-            <div className="alert-message">Please select an answer!</div>
+            <></>
+            // <div >Please select an answer!</div>
           )}
           <div className="programtwo_footer">
             {currentQuestionIndex < questions.length - 1 && (

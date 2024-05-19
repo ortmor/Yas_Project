@@ -152,9 +152,90 @@
       margin-bottom: 1em;
       text-align: center;
       background-color: #717073;
+      transform: translateY(0.2rem);
+
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .programs_containermain {
+    width: 100%;
+    margin: auto;
+    .programlogomain {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .programlog_img {
+        width: 300px;
+        margin-top: 3rem;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+
+    .programmainsize {
+      width: 95%;
+      margin: auto;
+    }
+
+    .program_buttonsmain {
+      display: flex;
+      width: 100%;
+      margin: 2em auto;
+      justify-content: space-between;
+      align-items: center;
+
+      .program_buttonchild {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 49%;
+        background-color: #717073;
+        cursor: pointer;
+        &.green {
+          background-color: green;
+        }
+        img {
+          height: 180px;
+          width: 180px;
+          -o-object-position: center;
+          object-fit: contain;
+          object-position: center;
+        }
+      }
+    }
+  }
+
+  .footermainbutton {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-size: 1.2rem;
+
+      text-align: center;
+      font-family: "dincond-boldregular";
+
+      transform: translateY(0.1rem);
+    }
+
+    button {
+      width: 50%;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      text-align: center;
+      background-color: #717073;
+      transform: translateY(0.2rem);
+
+    }
+  }
+}
+
 
 @media screen and (max-width: 500px) {
   .programs_containermain {
@@ -212,7 +293,7 @@
       font-family: "dincond-boldregular";
 
       text-align: center;
-      transform: translateY(0.7rem);
+      transform: translateY(0.1rem);
     }
 
     button {
@@ -280,7 +361,7 @@
       font-size: 1.2rem;
       text-align: center;
       font-family: "dincond-boldregular";
-      transform: translateY(0.7rem);
+      transform: translateY(0.1rem);
     }
 
     button {
