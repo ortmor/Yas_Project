@@ -96,7 +96,9 @@ const Programs = () => {
               className={`program_buttonchild ${programNums.includes(4) ? "green" : ""}`}
               onClick={() => handleProgramSelection(4)}
             >
-              <img src="/ADNOC YiS Lockup_NEG.png" alt="Program 4" />
+              <img src="/ScienceofRacing.png" alt="Program 4" />
+              
+              
             </div>
           </div>
 
