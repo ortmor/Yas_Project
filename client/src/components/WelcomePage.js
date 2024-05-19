@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import "../styles/WelcomePage.css";
+import "../styles/WelcomePage.scss";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
 
@@ -45,36 +45,52 @@ const WelcomePage = () => {
   }
 }
   return (
-    <div className="full-page">
-      <div className="welcome-container">
+    <div className="welcome_main">
+      <div className="welcome_maincontainer">
+        <div className="welcome_logo">
         <img
           src="/ADNOC YiS Lockup_NEG.png"
           alt="Logo"
-          className="welcome-logo"
+          className="welcome_logoone"
+          
         />
-        <div className="content">
-          <h1 className="welcome-heading">WELCOME</h1>
-          <h3 className="guide-heading">VISITOR GUIDE</h3>
-          <h4 className="program-info">
+        </div>
+        <div className="content_container">
+          <div className="content_containerchildone">
+               <h1>WELCOME</h1>
+          </div>
+          <div className="content_containerchildtwo">
+          <h2>VISITOR GUIDE</h2>
+          </div>
+          <div className="content_containerthree">
+            <p>
             Learn more about our world-class
             Science, Technology, Engineering
             and Math (STEM) programs
-          </h4>
-          <div className="button-containerwelcome">
+            </p>
+          </div>
+        
+        </div>
+        <div className="footer_button">
+         
+          <div className="footer_buttonone">
             {!user.login ? (
               <>
-                <button className="wel-button" onClick={handleRegister}>
-                  REGISTER
+                <button  onClick={handleRegister}>
+                  <h5>REGISTER</h5>
                 </button>
-                <button className="wel-button" onClick={handleLogin}>
-                  LOGIN
+                <button  onClick={handleLogin}>
+                 <h5>LOGIN</h5> 
                 </button>
               </>
-            ) :  <button className="wel-button" onClick={handleLogout}>
+            ) :  <button  onClick={handleLogout}>
             LOGOUT
           </button>}
 
           </div>
+        </div>
+        <div className="welcome_space">
+
         </div>
       </div>
     </div>

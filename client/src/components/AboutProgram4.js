@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../styles/AboutProgramfour.css';
+import '../styles/AboutProgramfour.scss';
 import { useSelector } from 'react-redux';
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -132,14 +132,19 @@ const AboutProgram4 = () => {
   const currentQuestion = questions[currentQuestionIndex];
 
   return (
-    <div className="about-containermain4">
-      <div className="about-containerfour">
-        <img src="/ADNOC YiS Lockup_NEG.png" alt="Logo" className="abtpro4-logo" />
+    <div className="programfour_containermain">
+    <div className="programfour-containerfour">
+      <div className="programfour_logo">
+        <img src="/ADNOC YiS Lockup_NEG.png" alt="Logo" className="programfour_img"
+          />
+          </div>
+        <div className="programfour_heading">
         <h3>TRIVIA TIME</h3>
         <h4>Question {currentQuestionIndex + 1}/{questions.length}</h4>
         <p>{currentQuestion.questionfour}</p>
-        <div className="options-container">
-          {currentQuestion.options.map((option, index) => {
+        </div>
+        <div className="programfour_options">
+          <div className="programfouroptions_container">          {currentQuestion.options.map((option, index) => {
             const isOptionSelected = selectedAnswer.selected === index;
             const isCorrect = selectedAnswer.correct === index;
             const isIncorrect =
@@ -154,7 +159,7 @@ const AboutProgram4 = () => {
             return (
               <div
                 key={index}
-                className={`answer-option4 ${
+                className={`programfour_answer ${
                   isOptionSelected ? "selected" : ""
                 } ${optionClass}`}
                 onClick={() => handleAnswerSelect(index)}
@@ -164,22 +169,23 @@ const AboutProgram4 = () => {
             );
           })}
         </div>
+        </div>
+
         {showAlert && (
           <div className="alert-message">Please select an answer!</div>
         )}
-        <button
-          className="next-button4"
-          onClick={handleNextQuestion}
-          style={{
-            display:
-              currentQuestionIndex === questions.length - 1 ? "none" : "block",
-          }}
-        >
-          NEXT QUESTION
-        </button>
-        {currentQuestionIndex === questions.length - 1 && (
-          <button  className="submit-buttonfour" onClick={handleFinishProgram}>SUBMIT</button>
-        )}
+        <div className="programfour_footer">
+            {currentQuestionIndex < questions.length - 1 && (
+              <button onClick={handleNextQuestion}>
+                <h2> NEXT QUESTION</h2>
+              </button>
+            )}
+            {currentQuestionIndex === questions.length - 1 && (
+              <button onClick={handleFinishProgram}>
+                <h2>SUBMIT</h2>
+              </button>
+            )}
+          </div>
         <ToastContainer />
       </div>
     </div>

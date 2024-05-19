@@ -1,11 +1,11 @@
 /* eslint-disable */
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
-import { useSelector } from 'react-redux';
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import { useSelector } from "react-redux";
 import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css"
-import '../styles/AboutProgramthree.css';
+import "react-toastify/dist/ReactToastify.css";
+import "../styles/AboutProgramthree.scss";
 
 const AboutProgram3 = () => {
   const { user } = useSelector((state) => state);
@@ -16,7 +16,7 @@ const AboutProgram3 = () => {
   const [questions, setQuestions] = useState([]);
   const [showAlert, setShowAlert] = useState(false);
   const [correctCount, setCorrectCount] = useState(0);
-  const [firstAttemptCorrect, setFirstAttemptCorrect] = useState(true); 
+  const [firstAttemptCorrect, setFirstAttemptCorrect] = useState(true);
   const [correctlyAnswered, setCorrectlyAnswered] = useState([]);
   const [wronglyAnswered, setWronglyAnswered] = useState([]);
 
@@ -99,20 +99,20 @@ const AboutProgram3 = () => {
     handleResult();
   };
 
-  const code=user?.details?.uniqueCode;
+  const code = user?.details?.uniqueCode;
 
   const handleResult = () => {
     const resultData = {
       userId: user.details._id,
-      code:code,
+      code: code,
       name: user.details.name,
-      email:user.details.email,
+      email: user.details.email,
       correctAnswers: correctCount,
       totalQuestions: questions.length,
-      firstAttemptCorrect: firstAttemptCorrect, 
+      firstAttemptCorrect: firstAttemptCorrect,
       programnum: 3,
       correctlyAnswered,
-      wronglyAnswered
+      wronglyAnswered,
     };
     axios
       .post("/result", resultData)
@@ -132,13 +132,25 @@ const AboutProgram3 = () => {
   const currentQuestion = questions[currentQuestionIndex];
 
   return (
-    <div className="about-containermain3">
-      <div className="about-containerthree">
-        <img src="/4x4iS - Lockup_NEG.png" alt="Logo" className="abtpro-logo" />
+    <div className="programthree_containermain">
+      <div className="programthree-containerthree">
+        <div className="programthree_logo">
+          <img
+            src="/4x4iS - Lockup_NEG.png"
+            alt="Logo"
+            className="programthree_img"
+          />
+        </div>
+        <div className="programthree_heading">
         <h3>TRIVIA TIME</h3>
-        <h4>Question {currentQuestionIndex + 1}/{questions.length}</h4>
+        <h4>
+          Question {currentQuestionIndex + 1}/{questions.length}
+        </h4>
         <p>{currentQuestion.questionthree}</p>
-        <div className="options-container">
+      </div>
+
+      <div className="programthree_options">
+        <div className="programthreeoptions_container">
           {currentQuestion.options.map((option, index) => {
             const isOptionSelected = selectedAnswer.selected === index;
             const isCorrect = selectedAnswer.correct === index;
@@ -154,7 +166,7 @@ const AboutProgram3 = () => {
             return (
               <div
                 key={index}
-                className={`answer-option3 ${
+                className={`programthree_answer ${
                   isOptionSelected ? "selected" : ""
                 } ${optionClass}`}
                 onClick={() => handleAnswerSelect(index)}
@@ -167,21 +179,21 @@ const AboutProgram3 = () => {
         {showAlert && (
           <div className="alert-message">Please select an answer!</div>
         )}
-        <button
-          className="next-button3"
-          onClick={handleNextQuestion}
-          style={{
-            display:
-              currentQuestionIndex === questions.length - 1 ? "none" : "block",
-          }}
-        >
-          NEXT QUESTION
-        </button>
-        {currentQuestionIndex === questions.length - 1 && (
-          <button className="submit-buttonthree" onClick={handleFinishProgram}>SUBMIT</button>
-        )}
+        <div className="programthree_footer">
+          {currentQuestionIndex < questions.length - 1 && (
+            <button onClick={handleNextQuestion}>
+              <h2> NEXT QUESTION</h2>
+            </button>
+          )}
+          {currentQuestionIndex === questions.length - 1 && (
+            <button onClick={handleFinishProgram}>
+              <h2>SUBMIT</h2>
+            </button>
+          )}
+        </div>
         <ToastContainer />
       </div>
+    </div>
     </div>
   );
 };

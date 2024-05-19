@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../styles/AboutPageDetails4.css";
+import "../styles/AboutPageDetails4.scss";
 import axios from "axios";
 import { useSelector } from "react-redux";
 
@@ -17,21 +17,28 @@ function AboutPageDetails4() {
   };
 
   return (
-    <div className="pro4-containermain">
-      <div className="pro4-container">
-        <img src="/ADNOC YiS Lockup_NEG.png" alt="Logo" className="logo" />
-
+    <div className="profour_main">
+    <div className="profour_containermain">
+      <div className="profour_containerhead">
+      <div className="profour_container">
+        <img src="/ADNOC YiS Lockup_NEG.png" alt="Logo" className="logofour" />
+        </div>
         <h1>SCIENCE OF RACING!</h1>
-        <p className="aboutpro_4">
+
+        <div className="aboutfour_para">
+
+        <p >
           Racing head-to-head on the 20-metre track 
           is the pinnacle of the Formula Ethara & F1 
           in Schools programs. To be fast, students 
           must gain an understanding of the related 
           science and math.
         </p>
+        </div>
+
         {/* Video section */}
-        <div className="post-video-container">
-          <div className="video-wrapper">
+        <div className="post_video_container">
+          <div className="video_wrapper">
             <iframe
               title="Video Player"
               width="560"
@@ -41,12 +48,10 @@ function AboutPageDetails4() {
               allowFullScreen
             ></iframe>
           </div>
-          <div className="tab-container">
-            {/* <button className="tab-button" onClick={handleFullscreenClick}>
-              Fullscreen
-            </button> */}
-            <button className="tab-button" onClick={handleAnswerTriviaClick}>
-              CONTINUE
+          </div>
+        <div className="tab_container">
+            <button onClick={handleAnswerTriviaClick}>
+              <h2>CONTINUE</h2>
             </button>
           </div>
         </div>

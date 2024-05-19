@@ -8,6 +8,8 @@
 }
 h2{
   color: black;
+  font-family: "dincond-boldregular";
+
 }
 .qr-scanner-container video {
   width: 100%;

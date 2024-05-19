@@ -1,0 +1,261 @@
+.protwo_main {
+  width: 100%;
+  height: unset;
+  background-color: rgb(250, 30, 0);
+
+  .protwo_containermain {
+    width: 100%;
+    height: unset;
+    background-color: rgb(250, 30, 0);
+    .protwo_containerhead {
+      width: 100%;
+      margin: auto;
+      .protwo_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .logotwo {
+          margin-top: 4rem;
+          width: 400px;
+          object-fit: contain;
+          object-position: center;
+        }
+      }
+    }
+    .abouttwo_para {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      margin: auto;
+
+      p {
+        margin-top: 2rem;
+        line-height: 1.9rem;
+        margin-bottom: 20px;
+        font-family: "dincond-boldregular";
+        text-align: center;
+        font-size: 1.9rem;
+        color: white;
+      }
+    }
+    .post_video_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      margin: auto;
+
+      .video_wrapper {
+        height: 0;
+        margin: 2rem;
+      }
+    }
+    .tab_container {
+      display: flex;
+      margin: auto;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20rem;
+
+      h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        transform: translateY(0.1rem);
+        font-family: "dincond-boldregular";
+        color: aliceblue;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+
+      button {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        text-align: center;
+        background-color: #717073;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .protwo_main {
+    width: 100%;
+    height: unset;
+    background-color: rgb(250, 30, 0);
+
+    .protwo_containermain {
+      width: 100%;
+      height: unset;
+      background-color: rgb(250, 30, 0);
+      .protwo_containerhead {
+        width: 100%;
+        margin: auto;
+        .protwo_container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .logotwo {
+            margin-top: 4rem;
+            width: 400px;
+            object-fit: contain;
+            object-position: center;
+          }
+        }
+      }
+      .abouttwo_para {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+
+        p {
+          margin-top: 2rem;
+          line-height: 1.9rem;
+          margin-bottom: 20px;
+          font-family: "dincond-boldregular";
+          text-align: center;
+          font-size: 1.9rem;
+          color: white;
+        }
+      }
+      .post_video_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+        margin-top: 13rem;
+
+        .video_wrapper {
+          width: 100%;
+          display: flex;
+
+          margin: auto;
+          justify-content: center;
+          align-items: center;
+          height: 0;
+          margin: 2rem;
+        }
+      }
+      .tab_container {
+        display: flex;
+        margin: auto;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 14rem;
+        h2 {
+          font-size: 1.5rem;
+          text-align: center;
+          transform: translateY(0.1rem);
+          color: aliceblue;
+          font-family: "dincond-boldregular";
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+        }
+
+        button {
+          margin-top: 1em;
+          margin-bottom: 1em;
+          text-align: center;
+          background-color: #717073;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .protwo_main {
+    width: 100%;
+    height: unset;
+    background-color: rgb(250, 30, 0);
+
+    .protwo_containermain {
+      width: 100%;
+      height: unset;
+      background-color: rgb(250, 30, 0);
+      .protwo_containerhead {
+        width: 100%;
+        margin: auto;
+        .protwo_container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .logotwo {
+            margin-top: 4rem;
+            width: 300px;
+            object-fit: contain;
+            object-position: center;
+          }
+        }
+      }
+      .abouttwo_para {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+
+        p {
+          margin-top: 2rem;
+          line-height: 1.9rem;
+          margin-bottom: 20px;
+          font-family: "dincond-boldregular";
+          text-align: center;
+          font-size: 1.2rem;
+          color: white;
+        }
+      }
+      .post_video_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+        margin-top: 13rem;
+
+        .video_wrapper {
+          width: 100%;
+          display: flex;
+
+          margin: auto;
+          justify-content: center;
+          align-items: center;
+          height: 0;
+          margin: 2rem;
+        }
+      }
+      .tab_container {
+        display: flex;
+        margin: auto;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 14rem;
+        h2 {
+          font-size: 1.5rem;
+          text-align: center;
+          transform: translateY(0.1rem);
+          color: aliceblue;
+          font-family: "dincond-boldregular";
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+        }
+
+        button {
+          margin-top: 1em;
+          margin-bottom: 1em;
+          text-align: center;
+          background-color: #717073;
+        }
+      }
+    }
+  }
+}

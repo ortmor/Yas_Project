@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import '../styles/RegistrationForm.css';
+import '../styles/RegistrationForm.scss';
 
 const RegistrationForm = () => {
   const navigate = useNavigate();
@@ -51,15 +51,23 @@ const RegistrationForm = () => {
   };
 
   return (
-    <div className="reg-full-page">
-      <div className="registration-container" style={{boxShadow:"none"}}>
-        <img src="/ADNOC YiS Lockup_NEG.png" alt="Logo" className="reg-logo" />
+    <div className="reg_fullpage">
+      <div className='reg_secondmain'>
+      <div className="reg_container" >
+        <div className='register_log'>
+        <img src="/ADNOC YiS Lockup_NEG.png" alt="Logo" className="req_logimg" />
+
+        </div>
+        <div className='req_heading'>
         <h2>REGISTRATION</h2>
+
+        </div>
+        <div className='feild_container'>
         <form onSubmit={handleSubmit}>
-          <div className="input-container">
-            <div className="input-field">
+          <div className="input_regcontainer">
+            <div className="input_fieldchildone">
               <label htmlFor="name" ></label>
-              <input
+              <input className='input_one'
                 type="text"
                 id="name"
                 name="name"
@@ -70,9 +78,9 @@ const RegistrationForm = () => {
               />
               {errors.name && <div className="alert">{errors.name}</div>}
             </div>
-            <div className="input-field">
+            <div className="input_fieldchildtwo">
               <label htmlFor="email"></label>
-              <input
+              <input className='input_one'
                 type="email"
                 id="email"
                 name="email"
@@ -84,13 +92,19 @@ const RegistrationForm = () => {
               {errors.email && <div className="alert">{errors.email}</div>}
             </div>
           </div>
-          <div className="button-container">
+          <div className="button_reqcontainer">
             <button type="submit" className="reg-button">
-              REGISTER
+              <h5>REGISTER</h5>
             </button>
           </div>
         </form>
+       
+        </div>
+      
       </div>
+      </div>
+     
+   
       <ToastContainer/>
     </div>
   );

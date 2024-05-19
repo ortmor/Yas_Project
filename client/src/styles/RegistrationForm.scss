@@ -1,0 +1,310 @@
+.reg_fullpage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1947ba;
+  .reg_secondmain {
+    .reg_container {
+      width: 100%;
+      margin: auto;
+      padding: 2 rem auto;
+      .register_log {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .req_logimg {
+          margin-top: 4rem;
+          width: 400px;
+          object-fit: contain;
+          object-position: center;
+        }
+      }
+      .req_heading {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 1rem;
+        h2 {
+          margin-top: 2rem;
+          font-size: 1.9rem;
+          font-weight: 300;
+          color: #ffffff;
+          font-family: "dincond-boldregular";
+        }
+      }
+      .feild_container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .input_regcontainer {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          width: 100%;
+          margin: auto;
+          gap: 1rem;
+          .input_fieldchildone {
+            width: 100%;
+
+            margin: auto;
+            .input_one {
+              height: 2rem;
+              text-align: center;
+            }
+            .input_one::placeholder {
+              color: #0047ba;
+              font-weight: 400;
+            }
+          }
+          .input_fieldchildtwo {
+            width: 100%;
+            margin: auto;
+            .input_one {
+              height: 2rem;
+              text-align: center;
+            }
+            .input_one::placeholder {
+              color: #0047ba;
+              font-weight: 400;
+            }
+          }
+        }
+        .button_reqcontainer {
+          display: flex;
+          width: 100%;
+          margin: auto;
+          h5 {
+            font-size: 1.5rem;
+            text-align: center;
+            font-family: "dincond-boldregular";
+            transform: translateY(0.2rem);
+            color: #fff;
+          }
+          button {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            width: 100%;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            text-align: center;
+            background-color: #717073;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .reg_fullpage {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1947ba;
+    .reg_secondmain {
+      .reg_container {
+        width: 100%;
+        margin: auto;
+        padding: 2 rem auto;
+        .register_log {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .req_logimg {
+            margin-top: 4rem;
+            width: 350px;
+            object-fit: contain;
+            object-position: center;
+          }
+        }
+        .req_heading {
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+          align-items: center;
+          width: 50%;
+          margin: auto;
+          margin-bottom: 1rem;
+          h2 {
+            margin-top: 2rem;
+            font-size: 1.9rem;
+            font-weight: 300;
+            color: #ffffff;
+            font-family: "dincond-boldregular";
+          }
+        }
+        .feild_container {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          .input_regcontainer {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            width: 100%;
+            margin: auto;
+            gap: 1rem;
+            .input_fieldchildone {
+              width: 100%;
+
+              margin: auto;
+              .input_one {
+                height: 2rem;
+                text-align: center;
+              }
+              .input_one::placeholder {
+                color: #0047ba;
+                font-weight: 200;
+              }
+            }
+            .input_fieldchildtwo {
+              width: 100%;
+              margin: auto;
+              .input_one {
+                height: 2rem;
+                text-align: center;
+                color: #1947ba;
+              }
+              .input_one::placeholder {
+                color: #0047ba;
+                font-weight: 200;
+              }
+            }
+          }
+          .button_reqcontainer {
+            display: flex;
+            width: 100%;
+            margin: auto;
+            h5 {
+              font-size: 1.5rem;
+              text-align: center;
+              font-family: "dincond-boldregular";
+              transform: translateY(0.2rem);
+              color: #fff;
+            }
+            button {
+              padding-top: 1rem;
+              padding-bottom: 1rem;
+              width: 100%;
+              margin-top: 1em;
+              margin-bottom: 1em;
+              text-align: center;
+              background-color: #717073;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .reg_fullpage {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1947ba;
+    .reg_secondmain {
+      .reg_container {
+        width: 100%;
+        margin: auto;
+        padding: 2 rem auto;
+        .register_log {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .req_logimg {
+            margin-top: 4rem;
+            width: 250px;
+            object-fit: contain;
+            object-position: center;
+          }
+        }
+        .req_heading {
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+          align-items: center;
+          width: 50%;
+          margin: auto;
+          margin-bottom: 1rem;
+          h2 {
+            margin-top: 2rem;
+            font-size: 1.9rem;
+            font-weight: 500;
+            color: #ffffff;
+            font-family: "dincond-boldregular";
+          }
+        }
+        .feild_container {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          .input_regcontainer {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            width: 100%;
+            margin: auto;
+            gap: 1rem;
+            .input_fieldchildone {
+              width: 100%;
+              margin: auto;
+              .input_one {
+                height: 2rem;
+                text-align: center;
+              }
+              .input_one::placeholder {
+                color: #0047ba;
+                font-weight: 200;
+              }
+            }
+            .input_fieldchildtwo {
+              width: 100%;
+              margin: auto;
+              .input_one {
+                height: 2rem;
+                text-align: center;
+              }
+              .input_one::placeholder {
+                color: #0047ba;
+                font-weight: 200;
+              }
+            }
+          }
+          .button_reqcontainer {
+            display: flex;
+            width: 100%;
+            margin: auto;
+            h5 {
+              font-size: 1.5rem;
+              text-align: center;
+              transform: translateY(0.2rem);
+              color: #fff;
+              font-family: "dincond-boldregular";
+
+            }
+            button {
+              padding-top: 1rem;
+              padding-bottom: 1rem;
+              width: 100%;
+              margin-top: 1em;
+              margin-bottom: 1em;
+              text-align: center;
+              background-color: #717073;
+            }
+          }
+        }
+      }
+    }
+  }
+}

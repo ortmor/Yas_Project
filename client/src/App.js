@@ -13,7 +13,6 @@ import RegistrationForm from "./components/RegistrationForm";
 import WelcomePage from "./components/WelcomePage";
 import AboutProgram from "./components/AboutProgram";
 import Programs from "./components/Programs";
-import VideoPage from "./components/VideoPage";
 import ThankyouPage from "./components/ThankyouPage";
 import AboutPageDetails from "./components/AboutPageDetails";
 import AboutProgram2 from "./components/AboutProgram2";
@@ -64,6 +63,8 @@ const App = () => {
             <Route path="/registration" element={<RegistrationForm />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/thank-you" element={<ThankyouPage />} />
+            <Route path="/programs" element={<Programs />} />
+
           </Route>
 
           <Route path="" element={<PrivateRoute />}>
@@ -81,13 +82,11 @@ const App = () => {
               path="/about-page-details-4"
               element={<AboutPageDetails4 />}
             />
-            <Route path="/about-program" element={<AboutProgram />} />
+           <Route path="/about-program" element={<AboutProgram />} />
             <Route path="/about-program-2" element={<AboutProgram2 />} />
             <Route path="/about-program-3" element={<AboutProgram3 />} />
             <Route path="/about-program-4" element={<AboutProgram4 />} />
-            <Route path="/programs" element={<Programs />} />
 
-            <Route path="/video" element={<VideoPage />} />
             <Route path="/qr-scanner" element={<QrScannerPage />} />
           </Route>
           <Route path="*" element={<PageNotFound1 />} />

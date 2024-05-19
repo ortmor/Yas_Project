@@ -1,0 +1,290 @@
+.programs_container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0047ba;
+}
+
+.programs_containermain {
+  width: 100%;
+  margin: auto;
+  .programlogomain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .programlog_img {
+      width: 450px;
+      margin-top: 3rem;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+
+  .programmainsize {
+    width: 70%;
+    margin: auto;
+  }
+
+  .program_buttonsmain {
+    display: flex;
+    width: 100%;
+    margin: 2em auto;
+    justify-content: space-between;
+    align-items: center;
+
+    .program_buttonchild {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 49%;
+      background-color: #717073;
+      cursor: pointer;
+      &.green {
+        background-color: green;
+      }
+
+      img {
+        height: 200px;
+        width: 200px;
+        -o-object-position: center;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+  }
+}
+
+.footermainbutton {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "dincond-boldregular";
+    transform: translateY(0.1rem);
+    color: aliceblue;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  button {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    background-color: #717073;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .programs_containermain {
+    width: 100%;
+    margin: auto;
+    .programlogomain {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .programlog_img {
+        width: 300px;
+        margin-top: 3rem;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+
+    .programmainsize {
+      width: 95%;
+      margin: auto;
+    }
+
+    .program_buttonsmain {
+      display: flex;
+      width: 100%;
+      margin: 2em auto;
+      justify-content: space-between;
+      align-items: center;
+
+      .program_buttonchild {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 49%;
+        background-color: #717073;
+        cursor: pointer;
+        &.green {
+          background-color: green;
+        }
+        img {
+          height: 180px;
+          width: 180px;
+          -o-object-position: center;
+          object-fit: contain;
+          object-position: center;
+        }
+      }
+    }
+  }
+
+  .footermainbutton {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-size: 1.2rem;
+
+      text-align: center;
+      font-family: "dincond-boldregular";
+
+      transform: translateY(0.7rem);
+    }
+
+    button {
+      margin-top: 1em;
+      margin-bottom: 1em;
+      text-align: center;
+      background-color: #717073;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .programs_containermain {
+    width: 100%;
+    margin: auto;
+    .programlogomain {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .programmainsize {
+      width: 95%;
+      margin: auto;
+    }
+
+    .program_buttonsmain {
+      display: flex;
+      width: 100%;
+      margin: 1em auto;
+      justify-content: space-between;
+      align-items: center;
+
+      .program_buttonchild {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 49%;
+        background-color: #717073;
+        cursor: pointer;
+        &.green {
+          background-color: green;
+        }
+        img {
+          height: 150px;
+          width: 150px;
+          -o-object-position: center;
+          object-fit: contain;
+          object-position: center;
+        }
+      }
+    }
+  }
+
+  .footermainbutton {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-size: 1.2rem;
+      font-family: "dincond-boldregular";
+
+      text-align: center;
+      transform: translateY(0.7rem);
+    }
+
+    button {
+      margin-top: 1em;
+      margin-bottom: 1em;
+      text-align: center;
+      background-color: #717073;
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .programs_containermain {
+    width: 100%;
+    margin: auto;
+    .programlogomain {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .programmainsize {
+      width: 95%;
+      margin: auto;
+    }
+
+    .program_buttonsmain {
+      display: flex;
+      width: 100%;
+      margin: 1em auto;
+      justify-content: space-between;
+      align-items: center;
+
+      .program_buttonchild {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 49%;
+        background-color: #717073;
+        cursor: pointer;
+        &.green {
+          background-color: green;
+        }
+        img {
+          height: 100px;
+          width: 100px;
+          -o-object-position: center;
+          object-fit: contain;
+          object-position: center;
+        }
+      }
+    }
+  }
+
+  .footermainbutton {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-size: 1.2rem;
+      text-align: center;
+      font-family: "dincond-boldregular";
+      transform: translateY(0.7rem);
+    }
+
+    button {
+      margin-top: 1em;
+      margin-bottom: 1em;
+      text-align: center;
+      background-color: #717073;
+    }
+  }
+}

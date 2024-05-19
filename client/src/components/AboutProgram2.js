@@ -1,11 +1,10 @@
-/* eslint-disable */
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useSelector } from "react-redux";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "../styles/AboutProgramtwo.css";
+import "../styles/AboutProgramtwo.scss";
 
 const AboutProgram = () => {
   const { user } = useSelector((state) => state);
@@ -16,7 +15,7 @@ const AboutProgram = () => {
   const [questions, setQuestions] = useState([]);
   const [showAlert, setShowAlert] = useState(false);
   const [correctCount, setCorrectCount] = useState(0);
-  const [firstAttemptCorrect, setFirstAttemptCorrect] = useState(true); 
+  const [firstAttemptCorrect, setFirstAttemptCorrect] = useState(true);
   const [correctlyAnswered, setCorrectlyAnswered] = useState([]);
   const [wronglyAnswered, setWronglyAnswered] = useState([]);
 
@@ -103,10 +102,10 @@ const AboutProgram = () => {
       email: user.details.email,
       correctAnswers: correctCount,
       totalQuestions: questions.length,
-      firstAttemptCorrect: firstAttemptCorrect, 
+      firstAttemptCorrect: firstAttemptCorrect,
       programnum: 2,
       correctlyAnswered,
-      wronglyAnswered
+      wronglyAnswered,
     };
     axios
       .post("/result", resultData)
@@ -126,55 +125,69 @@ const AboutProgram = () => {
   const currentQuestion = questions[currentQuestionIndex];
 
   return (
-    <div className="about-containermain2">
-      <div className="about-containertwo">
-        <img src="/F1_RM_InSchools_Localised_UAE_Lockup01_Stk_White_Standard.png" alt="Logo" className="abtpro-logo" />
-        <h3>TRIVIA TIME</h3>
-        <h4>Question {currentQuestionIndex + 1}/{questions.length}</h4>
-        <p>{currentQuestion.questiontwo}</p>
-        <div className="options-container">
-          {currentQuestion.options.map((option, index) => {
-            const isOptionSelected = selectedAnswer.selected === index;
-            const isCorrect = selectedAnswer.correct === index;
-            const isIncorrect =
-              selectedAnswer.incorrect &&
-              selectedAnswer.incorrect.includes(index);
-            const optionClass = isCorrect
-              ? "correct"
-              : isIncorrect
-              ? "incorrect"
-              : "";
-
-            return (
-              <div
-                key={index}
-                className={`answer-optiontwo ${
-                  isOptionSelected ? "selected" : ""
-                } ${optionClass}`}
-                onClick={() => handleAnswerSelect(index)}
-              >
-                {option}
-              </div>
-            );
-          })}
+    <div className="programtwo_containermain">
+      <div className="programtwo-containertwo">
+        <div className="programtwo_logo">
+          <img
+            src="/F1_RM_InSchools_Localised_UAE_Lockup01_Stk_White_Standard.png"
+            alt="Logo"
+            className="programtwo_img"
+          />
         </div>
-        {showAlert && (
-          <div className="alert-message">Please select an answer!</div>
-        )}
-        <button
-          className="next-buttontwo"
-          onClick={handleNextQuestion}
-          style={{
-            display:
-              currentQuestionIndex === questions.length - 1 ? "none" : "block",
-          }}
-        >
-          NEXT QUESTION
-        </button>
-        {currentQuestionIndex === questions.length - 1 && (
-          <button className="submit-buttontwo" onClick={handleFinishProgram}>SUBMIT</button>
-        )}
-        <ToastContainer />
+        <div className="programtwo_heading">
+          <h3>TRIVIA TIME</h3>
+          <h4>
+            Question {currentQuestionIndex + 1}/{questions.length}
+          </h4>
+          <p>{currentQuestion.questiontwo}</p>
+        </div>
+
+        <div className="programtwo_options">
+          <div className="programtwooptions_container">
+            {" "}
+            {currentQuestion.options.map((option, index) => {
+              const isOptionSelected = selectedAnswer.selected === index;
+              const isCorrect = selectedAnswer.correct === index;
+              const isIncorrect =
+                selectedAnswer.incorrect &&
+                selectedAnswer.incorrect.includes(index);
+              const optionClass = isCorrect
+                ? "correct"
+                : isIncorrect
+                ? "incorrect"
+                : "";
+
+              return (
+                <div
+                  key={index}
+                  className={`programtwo_answer ${
+                    isOptionSelected ? "selected" : ""
+                  } ${optionClass}`}
+                  onClick={() => handleAnswerSelect(index)}
+                >
+                  {option}
+                </div>
+              );
+            })}
+          </div>
+          {showAlert && (
+            <div className="alert-message">Please select an answer!</div>
+          )}
+          <div className="programtwo_footer">
+            {currentQuestionIndex < questions.length - 1 && (
+              <button onClick={handleNextQuestion}>
+                <h2> NEXT QUESTION</h2>
+              </button>
+            )}
+            {currentQuestionIndex === questions.length - 1 && (
+              <button onClick={handleFinishProgram}>
+                <h2>SUBMIT</h2>
+              </button>
+            )}
+          </div>
+
+          <ToastContainer />
+        </div>
       </div>
     </div>
   );

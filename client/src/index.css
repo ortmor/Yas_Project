@@ -3,8 +3,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* @font-face {
+  font-family: "DINCond-Bold";
+  src: url("../public/font/DINCond-Bold\ Regular.otf ")
+      format("otf"),
+    url("../public/font/DINCond-Bold\ Regular.otf ") format("otf");
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: 'dincond-boldregular';
+  src: url('../public/font/dincond-bold_regular-webfont.woff') format('woff2'),
+       url('../public/font/dincond-bold_regular-webfont.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
   body { 
-    background-color: #fff; /* White background color for the entire page */
-    font-family: 'DINCond-Bold'; /* Use DINCond-Bold font for the entire page */ 
+    background-color: #fff; 
+    font-family: 'dincond-boldregular'; 
 }
 
