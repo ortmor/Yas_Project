@@ -32,15 +32,9 @@ const Programs = () => {
   }, [userId]);
 
   const handleNextProgram = () => {
-    if (activeProgram === 1) {
-      navigate("/about-page-details");
-    } else if (activeProgram === 2) {
-      navigate("/about-page-details-2");
-    } else if (activeProgram === 3) {
-      navigate("/about-page-details-3");
-    } else if (activeProgram === 4) {
-      navigate("/about-page-details-4");
-    }
+   
+      navigate("/qr-scanner");
+   
   };
 
   const handleProgramSelection = (programNumber) => {
