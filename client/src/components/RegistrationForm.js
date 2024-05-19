@@ -43,10 +43,11 @@ const RegistrationForm = () => {
         toast.success('Registered successfully');
       } else {
         toast.error(response.data.message);
+        console.log(response.data.message,"response.data.message");
       }
     } catch (error) {
       console.error('Error during signup:', error);
-      alert('An error occurred during signup. Please try again.');
+      toast.error('Email is allready registered'); 
     }
   };
 
@@ -105,7 +106,7 @@ const RegistrationForm = () => {
       </div>
      
    
-      <ToastContainer/>
+      <ToastContainer />
     </div>
   );
   

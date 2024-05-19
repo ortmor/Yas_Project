@@ -4,7 +4,8 @@ import { useNavigate } from "react-router-dom";
 import '../styles/RegistrationForm.scss';
 import { useDispatch } from "react-redux";
 import axios from "axios";
-
+import "react-toastify/dist/ReactToastify.css";
+import '../styles/RegistrationForm.scss';
 const LoginPage = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -29,6 +30,7 @@ const LoginPage = () => {
             return navigate("/programs");
           } else {
             // alert(response.data.message)
+            toast.message(response.data.message)
             console.log(response.data.message, "response.data.message");
           }
         } else {
@@ -81,6 +83,8 @@ const LoginPage = () => {
         </div>
         </div>
       </div>
+      <ToastContainer/>
+
     </div>
   );
 };
