@@ -67,8 +67,9 @@ const App = () => {
           </Route>
 
           <Route path="" element={<PrivateRoute />}>
-          <Route path="/programs" element={<Programs />} />
             <Route path="/about" element={<AboutProgram />} />
+            <Route path="/programs" element={<Programs />} />
+
             <Route path="/about-page-details" element={<AboutPageDetails />} />
             <Route
               path="/about-page-details-2"
