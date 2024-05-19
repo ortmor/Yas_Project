@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,useLocation } from 'react-router-dom';
 import axios from 'axios';
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -13,6 +13,7 @@ const RegistrationForm = () => {
     email: '',
   });
   const [errors, setErrors] = useState({});
+  const location = useLocation();
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -39,7 +40,7 @@ const RegistrationForm = () => {
     try {
       const response = await axios.post('/signup', formData);
       if (!response.data.err) {
-        navigate('/login'); 
+        navigate('/login',{state:location.state}); 
         toast.success('Registered successfully');
       } else {
         toast.error(response.data.message);

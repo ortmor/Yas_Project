@@ -1,11 +1,11 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
-import { Navigate, Outlet } from 'react-router-dom';
-
+import { Navigate, Outlet, useLocation} from 'react-router-dom';
 function PrivateRoute() {
+    const location = useLocation();
+
     const { user } = useSelector((state) => state);
-    console.log(user,"user protected");
-    return user.login ? <Outlet /> : <Navigate to="/" replace />;
+    return user.login ? <Outlet /> :   <Navigate to="/" replace state={{ from: location }} />
   
 }
 

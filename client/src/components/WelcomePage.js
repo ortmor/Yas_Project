@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,useLocation } from "react-router-dom";
 import "../styles/WelcomePage.scss";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
@@ -10,11 +10,13 @@ const WelcomePage = () => {
   const { user } = useSelector((state) => state);
 
   const handleRegister = () => {
-    navigate("/registration");
+    navigate("/registration",{state:location.state});
   };
-
+  const location = useLocation();
+  
+  console.log(location,"welcome location");
   const handleLogin = () => {
-    navigate("/login");
+    navigate("/login",{state:location.state});
   };
 
   const userData = user?.details?.email;

@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,useLocation } from "react-router-dom";
 import '../styles/RegistrationForm.scss';
 import { useDispatch } from "react-redux";
 import axios from "axios";
@@ -10,7 +10,8 @@ const LoginPage = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [err, seterr] = useState("");
-
+  const location = useLocation();
+  console.log(location,"location");
   const handleLogin = async (e) => {
     e.preventDefault();
     if (email.trim()) {
@@ -19,6 +20,16 @@ const LoginPage = () => {
         console.log(response.data, "response");
         if (!response.data.err) {
           if (response.data.login) {
+            
+            if(location?.state?.from?.pathname){
+              console.log(location.state.from.pathname,"loginnnnnnnn");
+
+              navigate(location.state.from.pathname)
+              
+            }else{
+            navigate("/programs");
+
+            }
             dispatch({
               type: "user",
               payload: {
@@ -26,7 +37,6 @@ const LoginPage = () => {
                 details: response.data.student,
               },
             });
-            return navigate("/programs");
           } else {
             // alert(response.data.message)
             console.log(response.data.message, "response.data.message");
