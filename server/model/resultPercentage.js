@@ -15,7 +15,6 @@ const resultPercentageSchema = new mongoose.Schema({
   usersAnsweredAllWrong: [String],
 });
 
-// Create the model from the schema
 const resultPercentageModel = mongoose.model(
   "resultPercentage",
   resultPercentageSchema
