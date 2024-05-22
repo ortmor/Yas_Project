@@ -761,12 +761,14 @@ export async function storeResult(req, res) {
         console.log(updateData, "updateData");
         let existingPercentage = await resultPercentageSchema.findOne({
           name,
-          email,
+    email,
+    programnum,
+    questionId
         });
         console.log(existingPercentage,"existingPercentage");
         if (existingPercentage) {
           await resultPercentageSchema.updateOne(
-            { name, email },
+            { name, email, programnum, questionId },
             { $set: updateData }
           );
         } else {
