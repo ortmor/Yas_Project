@@ -7,9 +7,16 @@ import { useSelector } from "react-redux";
 
 function AboutPageDetails3() {
   const navigate = useNavigate();
-
+  const [showPopup, setShowPopup] = useState(true); // Show popup immediately
+  const [popupContent, setPopupContent] = useState("");
   const videoId = "_Jw9TX8KS2Q"; // Updated with the new video ID
-
+  useEffect(() => {
+    setPopupContent(`
+       <h2>The Terrain Challenge </h2>
+            <p>The terrain challenge is one of the key parts of the 4x4 in Schools program, it challenges students to navigate successfully around the course using the vehicle they design and manufacture at school. Students integrate electronics and develop code to enhance the performance of the vehicle as well as make improvements to the mechanical components such as the suspension and wheels.</p>
+          <p>You can have a go at navigating a 4x4 vehicle around the terrain challenge, just ask one of our staff!!</p>
+            `);
+  }, []);
   const handleAnswerTriviaClick = () => {
     navigate("/about-program-3");
   };
@@ -55,6 +62,19 @@ function AboutPageDetails3() {
           </div>
         </div>
       </div>
+      {showPopup && (
+        <div className="popup">
+          <div className="popup-content">
+            <button
+              className="close-button"
+              onClick={() => setShowPopup(false)}
+            >
+              &times;
+            </button>
+            <div dangerouslySetInnerHTML={{ __html: popupContent }}></div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

@@ -2,14 +2,22 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/AboutPageDetails.scss";
+import "../styles/WelcomePage.scss";
 import axios from "axios";
 import { useSelector } from "react-redux";
 
 const AboutPageDetails = () => {
   const navigate = useNavigate();
-
+  const [showPopup, setShowPopup] = useState(true); // Show popup immediately
+  const [popupContent, setPopupContent] = useState("");
   const videoId = "RJTjmvukv6s";
-
+  useEffect(() => {
+    setPopupContent(`
+     <h2>Welcome to the ADNOC Yas in Schools Experience Centre.</h2>
+            <p>This dedicated education facility at Yas Marina Circuit is used year-round for school visits, holiday camps, teacher training workshops, and program R&D.</p>
+            <p>This facility opened in 2023 and is the first of its kind in the world, giving students in the UAE a unique learning experience trackside at Yas Marina Circuit.</p>
+    `);
+  }, []);
   const handleAnswerTriviaClick = () => {
     navigate("/about-program");
   };
@@ -55,9 +63,23 @@ const AboutPageDetails = () => {
           </div>
         </div>
       </div>
+      
       <div className="space_one">
 
       </div>
+      {showPopup && (
+        <div className="popup">
+          <div className="popup-content">
+            <button
+              className="close-button"
+              onClick={() => setShowPopup(false)}
+            >
+              &times;
+            </button>
+            <div dangerouslySetInnerHTML={{ __html: popupContent }}></div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

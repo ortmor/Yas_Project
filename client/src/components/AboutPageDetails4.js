@@ -7,9 +7,16 @@ import { useSelector } from "react-redux";
 
 function AboutPageDetails4() {
   const navigate = useNavigate();
-
+  const [showPopup, setShowPopup] = useState(true); // Show popup immediately
+  const [popupContent, setPopupContent] = useState("");
   const videoId = "e9XcIwuzITQ"; // Updated with the new video ID
-
+  useEffect(() => {
+    setPopupContent(`
+      <h2>Race Zone</h2>
+            <p>You are now in the Race Zone which houses our 25m racetrack used for Formula Ethara and F1 in Schools. This space is mostly used for Formula Ethara race days where schools bring the Formula Ethara cars they have made in school and race them to find out who has the fastest car.</p>
+         <p>You can have a go at racing yourself today, just ask one of our staff!</p>
+            `);
+  }, []);
 
 
   const handleAnswerTriviaClick = () => {
@@ -56,6 +63,19 @@ function AboutPageDetails4() {
           </div>
         </div>
       </div>
+      {showPopup && (
+        <div className="popup">
+          <div className="popup-content">
+            <button
+              className="close-button"
+              onClick={() => setShowPopup(false)}
+            >
+              &times;
+            </button>
+            <div dangerouslySetInnerHTML={{ __html: popupContent }}></div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
