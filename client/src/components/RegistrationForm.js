@@ -48,7 +48,7 @@ const RegistrationForm = () => {
       }
     } catch (error) {
       console.error('Error during signup:', error);
-      toast.error('Email is allready registered'); 
+      toast.error('Email is already registered'); 
     }
   };
 
