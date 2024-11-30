@@ -64,6 +64,8 @@ export async function doSignup(req, res) {
 export async function login(req, res) {
   try {
     const { email } = req.body;
+    console.log(email,"emailll");
+    
     if (!email) {
       return res
         .status(400)
